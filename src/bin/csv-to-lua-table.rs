@@ -34,7 +34,7 @@ struct MoveName {
 }
 
 fn process_type_efficacy() -> String {
-    let file = include_str!("type_efficacy.csv");
+    let file = include_str!("../../csv/type_efficacy.csv");
 
     let mut reader = Reader::from_reader(file.as_bytes());
 
@@ -65,7 +65,7 @@ fn process_type_efficacy() -> String {
 }
 
 fn process_moves() -> String {
-    let file = include_str!("moves.csv");
+    let file = include_str!("../../csv/moves.csv");
 
     let mut reader = Reader::from_reader(file.as_bytes());
 
@@ -102,7 +102,7 @@ fn process_moves() -> String {
 }
 
 fn process_move_names() -> String {
-    let file = include_str!("move_names.csv");
+    let file = include_str!("../../csv/move_names.csv");
 
     let mut reader = Reader::from_reader(file.as_bytes());
 
@@ -133,7 +133,7 @@ fn write_to_file(path: &str, buf: &str) {
 }
 
 fn main() {
-    write_to_file("type_efficacy.txt", &process_type_efficacy());
-    write_to_file("moves.txt", &process_moves());
-    write_to_file("move_names.txt", &process_move_names());
+    write_to_file("output/type_efficacy.txt", &process_type_efficacy());
+    write_to_file("output/moves.txt", &process_moves());
+    write_to_file("output/move_names.txt", &process_move_names());
 }
