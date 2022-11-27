@@ -6,3 +6,4 @@ edition = "2021"
 [dependencies]
 csv = "*"
 serde = { version = "*", features = ["derive"] }
+itertools = "*"

@@ -1,9 +1,9 @@
 use csv::*;
+use itertools::*;
 use serde::*;
 use std::collections::*;
 use std::fs::File;
 use std::io::Write;
-use std::path::Path;
 
 #[derive(Debug, Deserialize)]
 struct TypeEfficacy {
@@ -30,7 +30,7 @@ struct MoveName {
     name: String,
 }
 
-fn process_type_efficacy() {
+fn process_type_efficacy() -> String {
     let file = include_str!("type_efficacy.csv");
 
     let mut rdr = Reader::from_reader(file.as_bytes());
@@ -40,21 +40,34 @@ fn process_type_efficacy() {
         .map(|element| element.unwrap())
         .collect();
 
-    let mut tree: HashMap<u64, HashMap<u64, bool>> = HashMap::new();
+    let mut tree: BTreeMap<u64, BTreeMap<u64, bool>> = BTreeMap::new();
 
     for element in &efficacy {
         if tree.get(&element.damage).is_none() {
-            tree.insert(element.damage, HashMap::default());
+            tree.insert(element.damage, BTreeMap::default());
         }
 
         tree.get_mut(&element.damage)
             .map(|val| val.insert(element.target, element.factor > 100));
     }
 
-    dbg!(tree);
+    let output = tree.into_iter().fold(String::new(), |mut acc, value| {
+        let values = value.1.into_iter().fold(String::new(), |mut a, b| {
+            a.push_str(&format!("\t[{}] = {}, \n", b.0, b.1));
+            a
+        });
+        acc.push_str(&format!("[{}] = {{\n{}}}, \n", value.0, values));
+        acc
+    });
+
+    // println!("{}", output);
+
+    // write_to_file("type_efficacy.txt", &output);
+
+    output
 }
 
-fn process_moves() {
+fn process_moves() -> String {
     let file = include_str!("moves.csv");
 
     let mut rdr = Reader::from_reader(file.as_bytes());
@@ -69,7 +82,7 @@ fn process_moves() {
         .filter(|move_| move_.power.is_some())
         .collect();
 
-    let mut tree: HashMap<u64, Vec<u64>> = HashMap::new();
+    let mut tree: BTreeMap<u64, Vec<u64>> = BTreeMap::new();
 
     for element in &attack_moves {
         if tree.get(&element.type_id).is_none() {
@@ -81,10 +94,23 @@ fn process_moves() {
         }
     }
 
-    dbg!(tree);
+    let output = tree.into_iter().fold(String::new(), |mut acc, value| {
+        acc.push_str(&format!(
+            "[{}] = {{\n{}}}, \n",
+            value.0,
+            value.1.iter().join(", ")
+        ));
+        acc
+    });
+
+    output
+
+    // print!("{}", output);
+
+    // write_to_file("moves.txt", &output);
 }
 
-fn process_move_names() {
+fn process_move_names() -> String {
     let file = include_str!("move_names.csv");
 
     let mut rdr = Reader::from_reader(file.as_bytes());
@@ -94,10 +120,10 @@ fn process_move_names() {
         .map(|element| element.unwrap())
         .collect();
 
-    let move_names: HashMap<u64, String> = moves
+    let move_names: BTreeMap<u64, String> = moves
         .into_iter()
         .filter(|move_| move_.local_language_id == 8)
-        .fold(HashMap::new(), |mut acc, value| {
+        .fold(BTreeMap::new(), |mut acc, value| {
             acc.entry(value.move_id).or_insert(value.name);
             acc
         });
@@ -109,9 +135,11 @@ fn process_move_names() {
             acc
         });
 
-    println!("{}", output);
+    // println!("{}", output);
 
-    write_to_file("move_names.txt", &output);
+    // write_to_file("move_names.txt", &output);
+
+    output
 }
 
 fn write_to_file(path: &str, buf: &str) {
