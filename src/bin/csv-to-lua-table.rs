@@ -1,3 +1,5 @@
+#![feature(map_try_insert)]
+
 use csv::*;
 use itertools::*;
 use serde::*;
@@ -18,7 +20,7 @@ struct TypeEfficacy {
 #[derive(Debug, Deserialize)]
 struct Move {
     id: u64,
-    identifier: String,
+    // identifier: String,
     type_id: u64,
     power: Option<u64>,
 }
@@ -26,55 +28,50 @@ struct Move {
 #[derive(Debug, Deserialize)]
 struct MoveName {
     move_id: u64,
-    local_language_id: u64,
+    #[serde(rename = "local_language_id")]
+    language: u64,
     name: String,
 }
 
 fn process_type_efficacy() -> String {
     let file = include_str!("type_efficacy.csv");
 
-    let mut rdr = Reader::from_reader(file.as_bytes());
+    let mut reader = Reader::from_reader(file.as_bytes());
 
-    let efficacy: Vec<TypeEfficacy> = rdr
+    let type_efficacy: Vec<TypeEfficacy> = reader
         .deserialize::<TypeEfficacy>()
-        .map(|element| element.unwrap())
+        .map(|efficacy| efficacy.unwrap())
         .collect();
 
     let mut tree: BTreeMap<u64, BTreeMap<u64, bool>> = BTreeMap::new();
 
-    for element in &efficacy {
-        if tree.get(&element.damage).is_none() {
-            tree.insert(element.damage, BTreeMap::default());
+    type_efficacy.iter().for_each(|efficacy| {
+        if tree.get(&efficacy.damage).is_none() {
+            tree.insert(efficacy.damage, BTreeMap::default());
         }
 
-        tree.get_mut(&element.damage)
-            .map(|val| val.insert(element.target, element.factor > 100));
-    }
+        tree.get_mut(&efficacy.damage)
+            .map(|val| val.insert(efficacy.target, efficacy.factor > 100));
+    });
 
-    let output = tree.into_iter().fold(String::new(), |mut acc, value| {
-        let values = value.1.into_iter().fold(String::new(), |mut a, b| {
-            a.push_str(&format!("\t[{}] = {}, \n", b.0, b.1));
-            a
+    tree.into_iter().fold(String::new(), |mut acc, value| {
+        let values = value.1.into_iter().fold(String::new(), |mut acc, val| {
+            acc.push_str(&format!("\t[{}] = {}, \n", val.0, val.1));
+            acc
         });
         acc.push_str(&format!("[{}] = {{\n{}}}, \n", value.0, values));
         acc
-    });
-
-    // println!("{}", output);
-
-    // write_to_file("type_efficacy.txt", &output);
-
-    output
+    })
 }
 
 fn process_moves() -> String {
     let file = include_str!("moves.csv");
 
-    let mut rdr = Reader::from_reader(file.as_bytes());
+    let mut reader = Reader::from_reader(file.as_bytes());
 
-    let moves: Vec<Move> = rdr
+    let moves: Vec<Move> = reader
         .deserialize::<Move>()
-        .map(|element| element.unwrap())
+        .map(|move_| move_.unwrap())
         .collect();
 
     let attack_moves: Vec<Move> = moves
@@ -84,62 +81,50 @@ fn process_moves() -> String {
 
     let mut tree: BTreeMap<u64, Vec<u64>> = BTreeMap::new();
 
-    for element in &attack_moves {
-        if tree.get(&element.type_id).is_none() {
-            tree.insert(element.type_id, Vec::default());
+    attack_moves.iter().for_each(|move_| {
+        if tree.get(&move_.type_id).is_none() {
+            tree.insert(move_.type_id, Vec::default());
         }
 
-        if let Some(val) = tree.get_mut(&element.type_id) {
-            val.push(element.id)
+        if let Some(val) = tree.get_mut(&move_.type_id) {
+            val.push(move_.id)
         }
-    }
+    });
 
-    let output = tree.into_iter().fold(String::new(), |mut acc, value| {
+    tree.into_iter().fold(String::new(), |mut acc, value| {
         acc.push_str(&format!(
-            "[{}] = {{\n{}}}, \n",
+            "[{}] = {{ {} }}, \n",
             value.0,
             value.1.iter().join(", ")
         ));
         acc
-    });
-
-    output
-
-    // print!("{}", output);
-
-    // write_to_file("moves.txt", &output);
+    })
 }
 
 fn process_move_names() -> String {
     let file = include_str!("move_names.csv");
 
-    let mut rdr = Reader::from_reader(file.as_bytes());
+    let mut reader = Reader::from_reader(file.as_bytes());
 
-    let moves: Vec<MoveName> = rdr
+    let moves: Vec<MoveName> = reader
         .deserialize::<MoveName>()
-        .map(|element| element.unwrap())
+        .map(|move_| move_.unwrap())
         .collect();
 
     let move_names: BTreeMap<u64, String> = moves
         .into_iter()
-        .filter(|move_| move_.local_language_id == 8)
+        .filter(|move_| move_.language == 8)
         .fold(BTreeMap::new(), |mut acc, value| {
             acc.entry(value.move_id).or_insert(value.name);
             acc
         });
 
-    let output = move_names
+    move_names
         .into_iter()
         .fold(String::new(), |mut acc, value| {
             acc.push_str(&format!("[{}] = \"{}\", \n", value.0, &value.1));
             acc
-        });
-
-    // println!("{}", output);
-
-    // write_to_file("move_names.txt", &output);
-
-    output
+        })
 }
 
 fn write_to_file(path: &str, buf: &str) {
@@ -148,7 +133,7 @@ fn write_to_file(path: &str, buf: &str) {
 }
 
 fn main() {
-    // process_type_efficacy();
-    // process_moves();
-    // process_move_names()
+    write_to_file("type_efficacy.txt", &process_type_efficacy());
+    write_to_file("moves.txt", &process_moves());
+    write_to_file("move_names.txt", &process_move_names());
 }
