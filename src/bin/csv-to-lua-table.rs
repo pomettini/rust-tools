@@ -1,9 +1,11 @@
-#![feature(map_try_insert)]
+#![deny(clippy::all)]
+#![warn(clippy::pedantic)]
+#![warn(clippy::nursery)]
 
-use csv::*;
-use itertools::*;
-use serde::*;
-use std::collections::*;
+use csv::Reader;
+use itertools::Itertools;
+use serde::Deserialize;
+use std::collections::BTreeMap;
 use std::fs::File;
 use std::io::Write;
 
@@ -40,26 +42,26 @@ fn process_type_efficacy() -> String {
 
     let type_efficacy: Vec<TypeEfficacy> = reader
         .deserialize::<TypeEfficacy>()
-        .map(|efficacy| efficacy.unwrap())
+        .map(std::result::Result::unwrap)
         .collect();
 
     let mut tree: BTreeMap<u64, BTreeMap<u64, bool>> = BTreeMap::new();
 
-    type_efficacy.iter().for_each(|efficacy| {
+    for efficacy in &type_efficacy {
         if tree.get(&efficacy.damage).is_none() {
             tree.insert(efficacy.damage, BTreeMap::default());
         }
 
         tree.get_mut(&efficacy.damage)
             .map(|val| val.insert(efficacy.target, efficacy.factor > 100));
-    });
+    }
 
     tree.into_iter().fold(String::new(), |mut acc, value| {
         let values = value.1.into_iter().fold(String::new(), |mut acc, val| {
             acc.push_str(&format!("\t[{}] = {}, \n", val.0, val.1));
             acc
         });
-        acc.push_str(&format!("[{}] = {{\n{}}}, \n", value.0, values));
+        acc.push_str(&format!("[{}] = {{\n{values}}}, \n", value.0));
         acc
     })
 }
@@ -69,10 +71,9 @@ fn process_moves() -> String {
 
     let mut reader = Reader::from_reader(file.as_bytes());
 
-    let moves: Vec<Move> = reader
+    let moves = reader
         .deserialize::<Move>()
-        .map(|move_| move_.unwrap())
-        .collect();
+        .map(std::result::Result::unwrap);
 
     let attack_moves: Vec<Move> = moves
         .into_iter()
@@ -81,15 +82,15 @@ fn process_moves() -> String {
 
     let mut tree: BTreeMap<u64, Vec<u64>> = BTreeMap::new();
 
-    attack_moves.iter().for_each(|move_| {
+    for move_ in &attack_moves {
         if tree.get(&move_.type_id).is_none() {
             tree.insert(move_.type_id, Vec::default());
         }
 
         if let Some(val) = tree.get_mut(&move_.type_id) {
-            val.push(move_.id)
+            val.push(move_.id);
         }
-    });
+    }
 
     tree.into_iter().fold(String::new(), |mut acc, value| {
         acc.push_str(&format!(
@@ -106,10 +107,9 @@ fn process_move_names() -> String {
 
     let mut reader = Reader::from_reader(file.as_bytes());
 
-    let moves: Vec<MoveName> = reader
+    let moves = reader
         .deserialize::<MoveName>()
-        .map(|move_| move_.unwrap())
-        .collect();
+        .map(std::result::Result::unwrap);
 
     let move_names: BTreeMap<u64, String> = moves
         .into_iter()
