@@ -1,6 +1,7 @@
 #![deny(clippy::all)]
 #![warn(clippy::pedantic)]
 #![warn(clippy::nursery)]
+#![feature(map_try_insert)]
 
 use csv::Reader;
 use itertools::Itertools;
@@ -68,6 +69,37 @@ fn process_pokemon_names() -> String {
             ));
             acc
         })
+}
+
+fn process_pokemon_types() -> String {
+    let file = include_str!("../../csv/pokemon_types.csv");
+
+    let mut reader = Reader::from_reader(file.as_bytes());
+
+    let pokemon_types: Vec<PokemonType> = reader
+        .deserialize::<PokemonType>()
+        .map(Result::unwrap)
+        .collect();
+
+    let mut tree: BTreeMap<u64, (u64, u64)> = BTreeMap::new();
+
+    pokemon_types.iter().for_each(|pokemon| match pokemon.slot {
+        1 => {
+            tree.insert(pokemon.id, (pokemon.type_id, 0));
+        }
+        2 => {
+            tree.insert(pokemon.id, (tree[&pokemon.id].0, pokemon.type_id));
+        }
+        _ => (),
+    });
+
+    tree.into_iter().fold(String::new(), |mut acc, value| {
+        acc.push_str(&format!(
+            "[{}] = {{{}, {}}}, \n",
+            value.0, value.1 .0, value.1 .1
+        ));
+        acc
+    })
 }
 
 fn process_type_efficacy() -> String {
@@ -167,6 +199,7 @@ fn write_to_file(path: &str, buf: &str) {
 
 fn main() {
     write_to_file("output/pokemon_names.txt", &process_pokemon_names());
+    write_to_file("output/pokemon_types.txt", &process_pokemon_types());
     write_to_file("output/type_efficacy.txt", &process_type_efficacy());
     write_to_file("output/moves.txt", &process_moves());
     write_to_file("output/move_names.txt", &process_move_names());
