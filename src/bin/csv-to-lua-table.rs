@@ -190,6 +190,7 @@ fn write_to_file(path: &str, buf: &str) {
 }
 
 fn main() {
+    // TODO: Refactor all of this with builder pattern
     write_to_file(
         "output/pokemon_names.txt",
         &process_pokemon_names(include_str!("../../csv/pokemon.csv")),
@@ -214,14 +215,83 @@ fn main() {
 
 #[test]
 fn test_pokemon_names() {
-    let input = r#"id,identifier,species_id,height,weight,base_experience,order,is_default
-1,bulbasaur,1,7,69,64,1,1
-905,enamorus-incarnate,905,16,480,,,1"#;
-    let output = r#"[1] = "Bulbasaur", 
-[905] = "Enamorus-incarnate", 
-"#;
+    let mut input = String::new();
+    input.push_str("id,identifier,species_id,height,weight,base_experience,order,is_default\n");
+    input.push_str("1,bulbasaur,1,7,69,64,1,1\n");
+    input.push_str("905,enamorus-incarnate,905,16,480,,,1\n");
 
-    let result = process_pokemon_names(input);
+    let mut output = String::new();
+    output.push_str("[1] = \"Bulbasaur\", \n");
+    output.push_str("[905] = \"Enamorus-incarnate\", \n");
+
+    let result = process_pokemon_names(&input);
+
+    assert_eq!(result, output);
+}
+
+#[test]
+fn test_pokemon_types() {
+    let mut input = String::new();
+    input.push_str("pokemon_id,type_id,slot\n");
+    input.push_str("1,12,1\n");
+    input.push_str("1,4,2\n");
+    input.push_str("897,8,1");
+
+    let mut output = String::new();
+    output.push_str("[1] = {12, 4}, \n");
+    output.push_str("[897] = {8, 0}, \n");
+
+    let result = process_pokemon_types(&input);
+
+    assert_eq!(result, output);
+}
+
+#[test]
+fn test_type_efficacy() {
+    let mut input = String::new();
+    input.push_str("damage_type_id,target_type_id,damage_factor\n");
+    input.push_str("1,1,100\n");
+    input.push_str("18,17,200\n");
+
+    let mut output = String::new();
+    output.push_str("[1] = {\n\t[1] = false, \n}, \n");
+    output.push_str("[18] = {\n\t[17] = true, \n}, \n");
+
+    let result = process_type_efficacy(&input);
+
+    assert_eq!(result, output);
+}
+
+#[test]
+fn test_moves() {
+    let mut input = String::new();
+    input.push_str("id,identifier,generation_id,type_id,power,pp,accuracy,priority,target_id,damage_class_id,effect_id,effect_chance,contest_type_id,contest_effect_id,super_contest_effect_id\n");
+    input.push_str("1,pound,1,1,40,35,100,0,10,2,1,,5,1,5\n");
+    input.push_str("839,barb-barrage,8,4,60,15,100,0,10,2,3,30,,,\n");
+
+    let mut output = String::new();
+    output.push_str("[1] = { 1 }, \n");
+    output.push_str("[4] = { 839 }, \n");
+
+    let result = process_moves(&input);
+
+    assert_eq!(result, output);
+}
+
+#[test]
+fn test_move_names() {
+    let mut input = String::new();
+    input.push_str("move_id,local_language_id,name\n");
+    input.push_str("1,1,はたく\n");
+    input.push_str("1,8,Botta\n");
+    input.push_str("825,1,アストラルビット\n");
+    input.push_str("825,8,Schegge Astrali\n");
+
+    let mut output = String::new();
+    output.push_str("[1] = \"Botta\", \n");
+    output.push_str("[825] = \"Schegge Astrali\", \n");
+
+    let result = process_move_names(&input);
 
     assert_eq!(result, output);
 }
