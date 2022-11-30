@@ -51,10 +51,10 @@ struct MoveName {
     name: String,
 }
 
-fn process_pokemon_names() -> String {
-    let file = include_str!("../../csv/pokemon.csv");
+fn process_pokemon_names(input: &str) -> String {
+    // let file = include_str!("../../csv/pokemon.csv");
 
-    let mut reader = Reader::from_reader(file.as_bytes());
+    let mut reader = Reader::from_reader(input.as_bytes());
 
     let pokemon_names = reader.deserialize::<Pokemon>().map(Result::unwrap);
 
@@ -71,10 +71,8 @@ fn process_pokemon_names() -> String {
         })
 }
 
-fn process_pokemon_types() -> String {
-    let file = include_str!("../../csv/pokemon_types.csv");
-
-    let mut reader = Reader::from_reader(file.as_bytes());
+fn process_pokemon_types(input: &str) -> String {
+    let mut reader = Reader::from_reader(input.as_bytes());
 
     let pokemon_types: Vec<PokemonType> = reader
         .deserialize::<PokemonType>()
@@ -102,10 +100,8 @@ fn process_pokemon_types() -> String {
     })
 }
 
-fn process_type_efficacy() -> String {
-    let file = include_str!("../../csv/type_efficacy.csv");
-
-    let mut reader = Reader::from_reader(file.as_bytes());
+fn process_type_efficacy(input: &str) -> String {
+    let mut reader = Reader::from_reader(input.as_bytes());
 
     let type_efficacy: Vec<TypeEfficacy> = reader
         .deserialize::<TypeEfficacy>()
@@ -133,10 +129,8 @@ fn process_type_efficacy() -> String {
     })
 }
 
-fn process_moves() -> String {
-    let file = include_str!("../../csv/moves.csv");
-
-    let mut reader = Reader::from_reader(file.as_bytes());
+fn process_moves(input: &str) -> String {
+    let mut reader = Reader::from_reader(input.as_bytes());
 
     let moves = reader
         .deserialize::<Move>()
@@ -169,10 +163,8 @@ fn process_moves() -> String {
     })
 }
 
-fn process_move_names() -> String {
-    let file = include_str!("../../csv/move_names.csv");
-
-    let mut reader = Reader::from_reader(file.as_bytes());
+fn process_move_names(input: &str) -> String {
+    let mut reader = Reader::from_reader(input.as_bytes());
 
     let moves = reader.deserialize::<MoveName>().map(Result::unwrap);
 
@@ -198,9 +190,38 @@ fn write_to_file(path: &str, buf: &str) {
 }
 
 fn main() {
-    write_to_file("output/pokemon_names.txt", &process_pokemon_names());
-    write_to_file("output/pokemon_types.txt", &process_pokemon_types());
-    write_to_file("output/type_efficacy.txt", &process_type_efficacy());
-    write_to_file("output/moves.txt", &process_moves());
-    write_to_file("output/move_names.txt", &process_move_names());
+    write_to_file(
+        "output/pokemon_names.txt",
+        &process_pokemon_names(include_str!("../../csv/pokemon.csv")),
+    );
+    write_to_file(
+        "output/pokemon_types.txt",
+        &process_pokemon_types(include_str!("../../csv/pokemon_types.csv")),
+    );
+    write_to_file(
+        "output/type_efficacy.txt",
+        &process_type_efficacy(include_str!("../../csv/type_efficacy.csv")),
+    );
+    write_to_file(
+        "output/moves.txt",
+        &process_moves(include_str!("../../csv/moves.csv")),
+    );
+    write_to_file(
+        "output/move_names.txt",
+        &process_move_names(include_str!("../../csv/move_names.csv")),
+    );
+}
+
+#[test]
+fn test_pokemon_names() {
+    let input = r#"id,identifier,species_id,height,weight,base_experience,order,is_default
+1,bulbasaur,1,7,69,64,1,1
+905,enamorus-incarnate,905,16,480,,,1"#;
+    let output = r#"[1] = "Bulbasaur", 
+[905] = "Enamorus-incarnate", 
+"#;
+
+    let result = process_pokemon_names(input);
+
+    assert_eq!(result, output);
 }
