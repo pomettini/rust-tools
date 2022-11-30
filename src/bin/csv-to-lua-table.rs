@@ -8,6 +8,22 @@ use serde::Deserialize;
 use std::collections::BTreeMap;
 use std::fs::File;
 use std::io::Write;
+use std::result::Result;
+
+#[derive(Debug, Deserialize)]
+struct Pokemon {
+    id: u64,
+    #[serde(rename = "identifier")]
+    name: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct PokemonType {
+    #[serde(rename = "pokemon_id")]
+    id: u64,
+    type_id: u64,
+    slot: u64,
+}
 
 #[derive(Debug, Deserialize)]
 struct TypeEfficacy {
@@ -22,7 +38,6 @@ struct TypeEfficacy {
 #[derive(Debug, Deserialize)]
 struct Move {
     id: u64,
-    // identifier: String,
     type_id: u64,
     power: Option<u64>,
 }
@@ -35,6 +50,26 @@ struct MoveName {
     name: String,
 }
 
+fn process_pokemon_names() -> String {
+    let file = include_str!("../../csv/pokemon.csv");
+
+    let mut reader = Reader::from_reader(file.as_bytes());
+
+    let pokemon_names = reader.deserialize::<Pokemon>().map(Result::unwrap);
+
+    pokemon_names
+        .into_iter()
+        .fold(String::new(), |mut acc, value| {
+            acc.push_str(&format!(
+                "[{}] = \"{}\", \n",
+                value.id,
+                // First letter is capitalized
+                value.name[0..1].to_uppercase() + &value.name[1..]
+            ));
+            acc
+        })
+}
+
 fn process_type_efficacy() -> String {
     let file = include_str!("../../csv/type_efficacy.csv");
 
@@ -42,7 +77,7 @@ fn process_type_efficacy() -> String {
 
     let type_efficacy: Vec<TypeEfficacy> = reader
         .deserialize::<TypeEfficacy>()
-        .map(std::result::Result::unwrap)
+        .map(Result::unwrap)
         .collect();
 
     let mut tree: BTreeMap<u64, BTreeMap<u64, bool>> = BTreeMap::new();
@@ -107,9 +142,7 @@ fn process_move_names() -> String {
 
     let mut reader = Reader::from_reader(file.as_bytes());
 
-    let moves = reader
-        .deserialize::<MoveName>()
-        .map(std::result::Result::unwrap);
+    let moves = reader.deserialize::<MoveName>().map(Result::unwrap);
 
     let move_names: BTreeMap<u64, String> = moves
         .into_iter()
@@ -133,6 +166,7 @@ fn write_to_file(path: &str, buf: &str) {
 }
 
 fn main() {
+    write_to_file("output/pokemon_names.txt", &process_pokemon_names());
     write_to_file("output/type_efficacy.txt", &process_type_efficacy());
     write_to_file("output/moves.txt", &process_moves());
     write_to_file("output/move_names.txt", &process_move_names());
