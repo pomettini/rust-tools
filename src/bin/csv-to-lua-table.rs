@@ -64,12 +64,10 @@ fn process_pokemon_names(input: &str) -> String {
     pokemon_names
         .into_iter()
         .fold(String::new(), |mut acc, value| {
-            acc.push_str(&format!(
-                "[{}] = \"{}\", \n",
-                value.id,
-                // First letter is capitalized
-                value.name[0..1].to_uppercase() + &value.name[1..]
-            ));
+            let id = value.id;
+            // First letter is capitalized
+            let name = value.name[0..1].to_uppercase() + &value.name[1..];
+            acc.push_str(&format!("[{id}] = \"{name}\", \n"));
             acc
         })
 }
