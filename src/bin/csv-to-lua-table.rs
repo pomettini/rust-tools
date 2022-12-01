@@ -12,6 +12,10 @@ use std::fs::File;
 use std::io::Write;
 use std::result::Result;
 
+const EMPTY_TYPE: u64 = 0;
+const EFFECTIVE: u64 = 100;
+const SUPER_EFFECTIVE: u64 = 200;
+
 #[derive(Debug, Deserialize)]
 struct Pokemon {
     id: u64,
@@ -82,7 +86,7 @@ fn process_pokemon_types(input: &str) -> String {
 
     pokemon_types.iter().for_each(|pokemon| match pokemon.slot {
         1 => {
-            pokemon_types_tree.insert(pokemon.id, (pokemon.type_id, 0));
+            pokemon_types_tree.insert(pokemon.id, (pokemon.type_id, EMPTY_TYPE));
         }
         2 => {
             pokemon_types_tree.insert(
@@ -96,10 +100,10 @@ fn process_pokemon_types(input: &str) -> String {
     pokemon_types_tree
         .into_iter()
         .fold(String::new(), |mut acc, value| {
-            acc.push_str(&format!(
-                "[{}] = {{{}, {}}}, \n",
-                value.0, value.1 .0, value.1 .1
-            ));
+            let id = value.0;
+            let first_type = value.1 .0;
+            let second_type = value.1 .1;
+            acc.push_str(&format!("[{id}] = {{{first_type}, {second_type}}}, \n"));
             acc
         })
 }
@@ -127,11 +131,14 @@ fn process_type_efficacy(input: &str) -> String {
     type_efficacy_tree
         .into_iter()
         .fold(String::new(), |mut acc, value| {
+            let damage_id = value.0;
             let values = value.1.into_iter().fold(String::new(), |mut acc, val| {
-                acc.push_str(&format!("\t[{}] = {}, \n", val.0, val.1));
+                let target_id = val.0;
+                let amount = val.1;
+                acc.push_str(&format!("\t[{target_id}] = {amount}, \n"));
                 acc
             });
-            acc.push_str(&format!("[{}] = {{\n{values}}}, \n", value.0));
+            acc.push_str(&format!("[{damage_id}] = {{\n{values}}}, \n"));
             acc
         })
 }
@@ -163,11 +170,9 @@ fn process_moves(input: &str) -> String {
     type_moves_tree
         .into_iter()
         .fold(String::new(), |mut acc, value| {
-            acc.push_str(&format!(
-                "[{}] = {{ {} }}, \n",
-                value.0,
-                value.1.iter().join(", ")
-            ));
+            let type_ = value.0;
+            let moves = value.1.iter().join(", ");
+            acc.push_str(&format!("[{type_}] = {{ {moves} }}, \n"));
             acc
         })
 }
@@ -188,14 +193,14 @@ fn process_move_names(input: &str) -> String {
     move_names
         .into_iter()
         .fold(String::new(), |mut acc, value| {
-            acc.push_str(&format!("[{}] = \"{}\", \n", value.0, &value.1));
+            let id = value.0;
+            let name = &value.1;
+            acc.push_str(&format!("[{id}] = \"{name}\", \n"));
             acc
         })
 }
 
 fn process_pokemon_weaknesses(input: &str) -> String {
-    let type_efficacy = get_type_efficacy();
-
     let mut reader = Reader::from_reader(input.as_bytes());
 
     let pokemon_types: Vec<PokemonType> = reader
@@ -222,29 +227,32 @@ fn process_pokemon_weaknesses(input: &str) -> String {
 
     for pokemon in &pokemon_types_tree {
         let mut weak_types: Vec<u64> = Vec::new();
-        type_efficacy.iter().for_each(|type_| match pokemon.1 .1 {
-            0 => {
-                if type_.1[&pokemon.1 .0] == 200 {
-                    weak_types.push(*type_.0);
+        let pokemon_id = *pokemon.0;
+        let first_type = &pokemon.1 .0;
+        let second_type = &pokemon.1 .1;
+        get_type_efficacy()
+            .iter()
+            .for_each(|type_| match second_type {
+                &EMPTY_TYPE => {
+                    if type_.1[first_type] == SUPER_EFFECTIVE {
+                        weak_types.push(*type_.0);
+                    }
                 }
-            }
-            _ => {
-                if type_.1[&pokemon.1 .0] * type_.1[&pokemon.1 .1] > 10000 {
-                    weak_types.push(*type_.0);
+                _ => {
+                    if type_.1[first_type] * type_.1[second_type] > (EFFECTIVE * EFFECTIVE) {
+                        weak_types.push(*type_.0);
+                    }
                 }
-            }
-        });
-        index_weaknesses_tree.insert(*pokemon.0, weak_types);
+            });
+        index_weaknesses_tree.insert(pokemon_id, weak_types);
     }
 
     index_weaknesses_tree
         .into_iter()
         .fold(String::new(), |mut acc, value| {
-            acc.push_str(&format!(
-                "[{}] = {{ {} }}, \n",
-                value.0,
-                value.1.iter().join(", ")
-            ));
+            let id = value.0;
+            let weak_types = value.1.iter().join(", ");
+            acc.push_str(&format!("[{id}] = {{ {weak_types} }}, \n"));
             acc
         })
 }
