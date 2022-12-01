@@ -5,6 +5,7 @@
 
 use csv::Reader;
 use itertools::Itertools;
+use rust_tools::get_type_efficacy;
 use serde::Deserialize;
 use std::collections::BTreeMap;
 use std::fs::File;
@@ -52,8 +53,6 @@ struct MoveName {
 }
 
 fn process_pokemon_names(input: &str) -> String {
-    // let file = include_str!("../../csv/pokemon.csv");
-
     let mut reader = Reader::from_reader(input.as_bytes());
 
     let pokemon_names = reader.deserialize::<Pokemon>().map(Result::unwrap);
@@ -79,25 +78,30 @@ fn process_pokemon_types(input: &str) -> String {
         .map(Result::unwrap)
         .collect();
 
-    let mut tree: BTreeMap<u64, (u64, u64)> = BTreeMap::new();
+    let mut pokemon_types_tree: BTreeMap<u64, (u64, u64)> = BTreeMap::new();
 
     pokemon_types.iter().for_each(|pokemon| match pokemon.slot {
         1 => {
-            tree.insert(pokemon.id, (pokemon.type_id, 0));
+            pokemon_types_tree.insert(pokemon.id, (pokemon.type_id, 0));
         }
         2 => {
-            tree.insert(pokemon.id, (tree[&pokemon.id].0, pokemon.type_id));
+            pokemon_types_tree.insert(
+                pokemon.id,
+                (pokemon_types_tree[&pokemon.id].0, pokemon.type_id),
+            );
         }
         _ => (),
     });
 
-    tree.into_iter().fold(String::new(), |mut acc, value| {
-        acc.push_str(&format!(
-            "[{}] = {{{}, {}}}, \n",
-            value.0, value.1 .0, value.1 .1
-        ));
-        acc
-    })
+    pokemon_types_tree
+        .into_iter()
+        .fold(String::new(), |mut acc, value| {
+            acc.push_str(&format!(
+                "[{}] = {{{}, {}}}, \n",
+                value.0, value.1 .0, value.1 .1
+            ));
+            acc
+        })
 }
 
 fn process_type_efficacy(input: &str) -> String {
@@ -108,25 +112,28 @@ fn process_type_efficacy(input: &str) -> String {
         .map(Result::unwrap)
         .collect();
 
-    let mut tree: BTreeMap<u64, BTreeMap<u64, bool>> = BTreeMap::new();
+    let mut type_efficacy_tree: BTreeMap<u64, BTreeMap<u64, u64>> = BTreeMap::new();
 
     for efficacy in &type_efficacy {
-        if tree.get(&efficacy.damage).is_none() {
-            tree.insert(efficacy.damage, BTreeMap::default());
+        if type_efficacy_tree.get(&efficacy.damage).is_none() {
+            type_efficacy_tree.insert(efficacy.damage, BTreeMap::default());
         }
 
-        tree.get_mut(&efficacy.damage)
-            .map(|val| val.insert(efficacy.target, efficacy.factor > 100));
+        type_efficacy_tree
+            .get_mut(&efficacy.damage)
+            .map(|val| val.insert(efficacy.target, efficacy.factor));
     }
 
-    tree.into_iter().fold(String::new(), |mut acc, value| {
-        let values = value.1.into_iter().fold(String::new(), |mut acc, val| {
-            acc.push_str(&format!("\t[{}] = {}, \n", val.0, val.1));
+    type_efficacy_tree
+        .into_iter()
+        .fold(String::new(), |mut acc, value| {
+            let values = value.1.into_iter().fold(String::new(), |mut acc, val| {
+                acc.push_str(&format!("\t[{}] = {}, \n", val.0, val.1));
+                acc
+            });
+            acc.push_str(&format!("[{}] = {{\n{values}}}, \n", value.0));
             acc
-        });
-        acc.push_str(&format!("[{}] = {{\n{values}}}, \n", value.0));
-        acc
-    })
+        })
 }
 
 fn process_moves(input: &str) -> String {
@@ -141,26 +148,28 @@ fn process_moves(input: &str) -> String {
         .filter(|move_| move_.power.is_some())
         .collect();
 
-    let mut tree: BTreeMap<u64, Vec<u64>> = BTreeMap::new();
+    let mut type_moves_tree: BTreeMap<u64, Vec<u64>> = BTreeMap::new();
 
     for move_ in &attack_moves {
-        if tree.get(&move_.type_id).is_none() {
-            tree.insert(move_.type_id, Vec::default());
+        if type_moves_tree.get(&move_.type_id).is_none() {
+            type_moves_tree.insert(move_.type_id, Vec::default());
         }
 
-        if let Some(val) = tree.get_mut(&move_.type_id) {
+        if let Some(val) = type_moves_tree.get_mut(&move_.type_id) {
             val.push(move_.id);
         }
     }
 
-    tree.into_iter().fold(String::new(), |mut acc, value| {
-        acc.push_str(&format!(
-            "[{}] = {{ {} }}, \n",
-            value.0,
-            value.1.iter().join(", ")
-        ));
-        acc
-    })
+    type_moves_tree
+        .into_iter()
+        .fold(String::new(), |mut acc, value| {
+            acc.push_str(&format!(
+                "[{}] = {{ {} }}, \n",
+                value.0,
+                value.1.iter().join(", ")
+            ));
+            acc
+        })
 }
 
 fn process_move_names(input: &str) -> String {
@@ -184,6 +193,62 @@ fn process_move_names(input: &str) -> String {
         })
 }
 
+fn process_pokemon_weaknesses(input: &str) -> String {
+    let type_efficacy = get_type_efficacy();
+
+    let mut reader = Reader::from_reader(input.as_bytes());
+
+    let pokemon_types: Vec<PokemonType> = reader
+        .deserialize::<PokemonType>()
+        .map(Result::unwrap)
+        .collect();
+
+    let mut pokemon_types_tree: BTreeMap<u64, (u64, u64)> = BTreeMap::new();
+
+    pokemon_types.iter().for_each(|pokemon| match pokemon.slot {
+        1 => {
+            pokemon_types_tree.insert(pokemon.id, (pokemon.type_id, 0));
+        }
+        2 => {
+            pokemon_types_tree.insert(
+                pokemon.id,
+                (pokemon_types_tree[&pokemon.id].0, pokemon.type_id),
+            );
+        }
+        _ => (),
+    });
+
+    let mut index_weaknesses_tree: BTreeMap<u64, Vec<u64>> = BTreeMap::new();
+
+    for pokemon in &pokemon_types_tree {
+        let mut weak_types: Vec<u64> = Vec::new();
+        type_efficacy.iter().for_each(|type_| match pokemon.1 .1 {
+            0 => {
+                if type_.1[&pokemon.1 .0] == 200 {
+                    weak_types.push(*type_.0);
+                }
+            }
+            _ => {
+                if type_.1[&pokemon.1 .0] * type_.1[&pokemon.1 .1] > 10000 {
+                    weak_types.push(*type_.0);
+                }
+            }
+        });
+        index_weaknesses_tree.insert(*pokemon.0, weak_types);
+    }
+
+    index_weaknesses_tree
+        .into_iter()
+        .fold(String::new(), |mut acc, value| {
+            acc.push_str(&format!(
+                "[{}] = {{ {} }}, \n",
+                value.0,
+                value.1.iter().join(", ")
+            ));
+            acc
+        })
+}
+
 fn write_to_file(path: &str, buf: &str) {
     let mut file = File::create(path).unwrap();
     file.write_all(buf.as_bytes()).unwrap();
@@ -198,6 +263,10 @@ fn main() {
     write_to_file(
         "output/pokemon_types.txt",
         &process_pokemon_types(include_str!("../../csv/pokemon_types.csv")),
+    );
+    write_to_file(
+        "output/pokemon_weaknesses.txt",
+        &process_pokemon_weaknesses(include_str!("../../csv/pokemon_types.csv")),
     );
     write_to_file(
         "output/type_efficacy.txt",
@@ -235,13 +304,30 @@ fn test_pokemon_types() {
     input.push_str("pokemon_id,type_id,slot\n");
     input.push_str("1,12,1\n");
     input.push_str("1,4,2\n");
-    input.push_str("897,8,1");
+    input.push_str("897,8,1\n");
 
     let mut output = String::new();
     output.push_str("[1] = {12, 4}, \n");
     output.push_str("[897] = {8, 0}, \n");
 
     let result = process_pokemon_types(&input);
+
+    assert_eq!(result, output);
+}
+
+#[test]
+fn test_pokemon_weaknesses() {
+    let mut input = String::new();
+    input.push_str("pokemon_id,type_id,slot\n");
+    input.push_str("1,12,1\n");
+    input.push_str("1,4,2\n");
+    input.push_str("895,16,1\n");
+
+    let mut output = String::new();
+    output.push_str("[1] = { 3, 10, 14, 15 }, \n");
+    output.push_str("[895] = { 15, 16, 18 }, \n");
+
+    let result = process_pokemon_weaknesses(&input);
 
     assert_eq!(result, output);
 }
@@ -254,8 +340,8 @@ fn test_type_efficacy() {
     input.push_str("18,17,200\n");
 
     let mut output = String::new();
-    output.push_str("[1] = {\n\t[1] = false, \n}, \n");
-    output.push_str("[18] = {\n\t[17] = true, \n}, \n");
+    output.push_str("[1] = {\n\t[1] = 100, \n}, \n");
+    output.push_str("[18] = {\n\t[17] = 200, \n}, \n");
 
     let result = process_type_efficacy(&input);
 

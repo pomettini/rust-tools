@@ -1,9 +1,14 @@
 [package]
+edition = "2021"
 name = "rust-tools"
 version = "0.1.0"
-edition = "2021"
+
+[lib]
+name = "rust_tools"
+path = "src/lib.rs"
 
 [dependencies]
 csv = "*"
-serde = { version = "*", features = ["derive"] }
 itertools = "*"
+lazy_static = "*"
+serde = {version = "*", features = ["derive"]}
