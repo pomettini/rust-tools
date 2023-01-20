@@ -7,12 +7,11 @@ fn multiple_csv_to_hashmap(multiple_csv: Vec<&str>) -> HashMap<&str, Vec<&str>> 
 
     multiple_csv.into_iter().for_each(|csv| {
         csv.lines()
-            .into_iter()
             .map(|line| line.split('|').collect::<Vec<&str>>())
             .for_each(|line_split| {
-                let key = *line_split.get(0).unwrap();
+                let key = *line_split.first().unwrap();
                 let value = *line_split.get(1).unwrap();
-                map.entry(&key).or_insert_with(Vec::new).push(value);
+                map.entry(key).or_insert_with(Vec::new).push(value);
             });
     });
 
