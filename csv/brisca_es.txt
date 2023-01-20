@@ -1,0 +1,488 @@
+LOADING_INTRO|CARGANDO, POR FAVOR ESPERE...
+HAS_NICKNAME_PASSWORD|¿Tienes una cuenta con apodo y contraseña?
+LOGIN_WITH_NICKNAME|ENTRA A TRAVES DE APODO
+Disclosure_Facebook|NO VAMOS A PUBLICAR NADA SIN SU CONSENTIMIENTO
+CONNECT_WITH_FACEBOOK|<size=20>ENTRA A TRAVES DE FACEBOOK</size>
+CREATE_NEW_ACCOUNT|REGISTRATE
+LOGIN|ENTRAR
+PLAY_WITHOUT_LOGIN|CONTINUA
+INSERT_YOUR_DATA|INTRODUZCA SUS DATOS
+Forgot_your_password|<size=19>¿HAS OLVIDADO TU PASSWORD O NICKNAME?</size>
+All_fields_are_required|<size=26>Todos los campos son obligatorios.</size>
+OK|OK
+SIGN_IN|REGISTRATE
+Email_Validate|<size=26>Email no es válida</size>
+Connection|Conexión server...
+Network_Error_Create_Player|<size=26>Error de red.\nNo se puede crear el usuario.</size>
+Nickname_Already_Use|<size=26>Error.\nNickname ya en uso.</size>
+Email_Already_Use|<size=26>No se puede crear el usuario,\nemail ya está registrado</size>
+Unable_Create_User|<size=26>No se puede crear el usuario.</size>
+New_Account_Created|<size=26>Nuevo perfil creado.</size>
+Network_Error_Login|<size=26>Error de red.\nCompruebe el Internet.</size>
+Invalid_Credentials|<size=26>Credenciales no válidas.</size>
+Locked_Account|<size=26>Cuenta bloqueada temporalmente.\nPor favor intentelo de nuevo mas tarde</size>
+CLOSE|CERRAR
+Quit_Game|<size=26>¿Estás seguro de querer abandonar la partida?</size>
+YES|SI
+NO|NO
+MENU|MENU
+LEADERBOARDS|CLASIFICACION
+CHAMPIONS|CAMPEONES
+PLAYERS_LISTS|OPONENTES
+OPTIONS|OPCIONES
+PROFILE|PERFIL
+HELP|AYUDA
+MORE_GAMES|OTROS JUEGOS
+STORE|TIENDA
+WRITE_US|ESCRIBANOS
+CHANGE_PROFILE|EDITAR PERFIL
+ERROR_ADD_FACEBOOK|<size=26>No se puede conectar la cuenta de Facebook para jugar.</size>
+ACCOUNT_UPDATE|<size=26>Account conectado a Facebook/size>
+ACCOUNT_ALREADY_FACEBOOK|<size=26>Account está ya conectado a Facebook</size>
+TITLE_BANNER_PROFILE_PREMIUM|<size=26>PERFIL PREMIUM</size>
+MSG_BANNER_PROFILE_PREMIUM|<size=16>SELECCIONAR NUEVAS IMAGENES \nFANTASTICAS PARA SU PERFIL</size>
+BUTTON_BANNER_PROFILE_PREMIUM|DESCUBRIR
+CHANGE_USERNAME_PLACEHOLDER|NUEVO NICKNAME
+LABEL_CHANGE_AVATAR|ELIGE SU AVATAR
+WANT_SAVE_PROFILE_CHANGE|<size=26>¿Quieres guardar los cambios en el perfil?</size>
+ERROR_SAVE_PROFILE_CHANGE|<size=26>Error.\nNo se puede guardar los cambios en el perfil</size>
+ERROR_USERNAME_EMPTY|<size=26>Error, para guardar debes introducir un nuevo apodo.</size>
+MESSAGE_FIRST_CHANGE_USERNAME|<size=26>Solo puedes cambiar tu apodo una vez.\n\n¿Quieres proceder?</size>
+MESSAGE_SUCCESS_CHANGE_USERNAME|<size=26>Apodo actualizado con éxito!</size>
+ERROR_COINS_CHANGE_USERNAME|<size=26>Lo sentimos, no tienes suficientes monedas.\nEl cambio de apodo tiene un coste de [%price] monedas.</size>
+MESSAGE_CONFIRM_CHANGE_USERNAME|<size=26>El cambio de apodo tiene un coste de [%price] monedas.\n\n¿Quieres proceder?</size>
+BUTTON_SAVE_USERNAME|SALVAR\nAPODO
+disclaimer|Al hacer clic en el botón Registrate \nreconoce que ha leído y acepta los \n<color=#FFFFFFFF>Términos y Condiciones</color> y <color=#FFFFFFFF>Política de Privacidad</color>
+CARDS_DECK|ELIGE LAS CARTAS
+BANNER_CARDS|ELIJA SUS CARTAS<size=35>\nORIGINALES</size>
+Download|Descarga en curso:
+CANCEL|CANCELAR
+TITLE_BANNER_BACKGROUND|MESA PREMIUM
+MSG_BANNER_BACKGROUND|PERSONALIZAR LA MESA \nCON MUCHOS BACKGROUNDS
+PURCHASE|COMPRAR
+Verde|VERDE
+Rosso|ROJO
+Blu|AZUL
+Viola|MORADO
+Beige|BEIGE
+Tovaglia|MANTEL
+Rovere|ROBLE
+Teak|TEAK
+BACKGROUNDS|ELIGE UNA MESA
+YOUR_COINS|SUS MONEDAS
+PURCHASE_COINS|COMPRAR MONEDAS
+TITLE_REMOVE_ADS|ELIMINAR\nPUBLICIDAD
+MSG_REMOVE_ADS|ELIMINAR TODA LA\nPUBLICIDAD Y JUGAR SIN\nNINGUN TIPO DE INTERRUPCION
+RESTORE_PURCHASE|RESTAURAR COMPRAS
+price_ads|solo [%price] por mes
+MORE_DETAILS|DESCUBRIR
+TITLE_AVATARS_PREMIUM|SUPER\nAVATAR
+MSG_AVATARS_PREMIUM|ELIGE ENTRE LOS MUCHOS GRANDES AVATAR PARA TENER UN PERFIL EXCLUSIVO
+PRICE_AVATARS_PREMIUM|[%price]
+TITLE_BACKGROUND_PREMIUM|FONDOS\nEXCLUSIVOS
+MSG_BACKGROUND_PREMIUM|PERSONALIZAR EL FONDO\nDE TU MESA COU UN\nCONJUNTO UNICO DE IMAGENES
+PRICE_BACKGROUND_PREMIUM|[%price]
+TITLE_BLOCK_PLAYERS|BLOQUES\nJUGADORES
+MSG_BLOCK_PLAYERS|AUMENTA EL NUMERO DE JUGADORES QUE PUEDE BLOQUEAR Y DECIDE QUE PARA JUGAR CONTRA
+PRICE_BLOCK_PLAYERS|de [%price]
+TITLE_PREF_PLAYERS|OPONENTES\nFAVORITOS
+MSG_PREF_PLAYERS|AUMENTA EL NÚMERO DE JUGADORES QUE QUIERES ENCONTRAR FÁCIL PARA JUGAR OTRA VEZ
+PRICE_PREF_PLAYERS|de [%price]
+DETAILS_MENU|DETALLE PRODUCTO
+TROPHY|LOGROS
+SCORES|PUNTAJES
+LEVEL|NIVEL
+PURCHASE_SUCCESS|<size=26>Felicidades,\ncompra con éxito!</size>
+JUST_PURCHASE|<size=26>El objeto ya compró</size>
+NOT_ENOUGH_COINS|<size=26>En este momento usted no tiene suficiente monedas para hacer la compra.\n\n¿Quieres comprar monedas?</size>
+PURCHASE_FAIL|<size=26>Lo sentimos, no compra.\nPor favor, inténtelo de nuevo más tarde</size>
+SD_PRICE_AVATAR_FEMALE|[%price]
+SD_PRICE_AVATAR_MALE|[%price]
+SD_TITLE_AVATAR_FEMALE|AVATAR SUPER PARA ELLA
+SD_TITLE_AVATAR_MALE|AVATAR SUPER PARA EL
+SD_MSG_AVATAR_FEMALE|Comprar el paquete de cuatro avatar fantástico para dar a su perfil el toque justo de exclusividad con la que se destacan
+SD_MSG_AVATAR_MALE|Comprar el paquete avatar cuatro fantásticos que se puede utilizar en cualquier momento para personalizar su perfil
+SD_PRICE_BACKGROUNDS|[%price]
+SD_TITLE_BACKGROUNDS|Sus fondos exclusivos
+SD_MSG_BACKGROUNDS|Decorar el fondo de la mesa con una fantástica serie de imágenes que hará que sus juegos aún más emocionante
+SD_TITLE_BLOCK_PLAYERS|Bloqueas jugadores
+SD_MESSAGE_BLOCK_PLAYERS|Aumenta el número de jugadores que se puede\nintroducir en la lista de jugadores bloqueados
+SD_MESSAGE_COLOR_BLOCK_PLAYERS|Estos jugadores no pueden jugar contigo!
+SD_LABEL_CHOICE_BLOCK_PLAYERS|Elija el paquete que prefiera
+SD_TEXT_BLOCK_PLAYERS|<size=14>Bloqueas[%num]\notros jugadores</size>
+SD_PRICE_BLOCK_PLAYERS|[%price]
+SD_BLOCK_PLAYERS_DISCOUNT|[%num]% descuento
+SD_POST_IT_BLOCK_PLAYERS|El más\ncomprado
+SD_TITLE_PREF_PLAYERS|Jugadores favoritos
+SD_MESSAGE_PREF_PLAYERS|AUMENTA EL NUMERO DE JUGADORES QUE PUEDE\nPONER EN LA LISTA DE JUGADORES FAVORITOS.
+SD_MESSAGE_COLOR_PREF_PLAYERS|Será más fácil\nde encontrar en la lista de mesas abiertas!
+SD_LABEL_CHOICE_PREF_PLAYERS|Elija el paquete que prefiera
+SD_TEXT_PREF_PLAYERS|AÑADE otros\n[%num] jugadores
+SD_PRICE_PREF_PLAYERS|[%price]
+SD_PREF_PLAYERS_DISCOUNT|[%num]% descuento!
+TITLE_COINS_SMALL|OFERTA ESPECIAL
+TITLE_COINS_MEDIUM|puñado de\nmonedas
+TITLE_COINS_BIG|Reserva de\nmonedas
+TITLE_COINS_HUGE|Super reserva\nde monedas
+TITLE_COINS_MISTERY|MYSTERY BOX\n<size=14>¿Cuántas monedas hay?</size>
+TITLE_COINS_GIFT|Bienvenido\n<size=16>[%num] monedeas en regalo!</size>
+COINS_SMALL|[%num]
+COINS_MEDIUM|[%num]
+COINS_BIG|[%num]
+COINS_HUGE|[%num]
+TEXT_COINS_SMALL|EN VEZ\n<size=19>3,00€</size>
+TEXT_COINS_GIFT|RECOJA\nTU REGALO
+TEXT_COINS_MISTERY|PRUEBA TU\nSUERTE
+PRICE_COINS_SMALL|[%price]
+PRICE_COINS_MEDIUM|[%price]
+PRICE_COINS_BIG|[%price]
+PRICE_COINS_HUGE|[%price]
+PRICE_COINS_MISTERY|[%price]
+PRICE_COINS_GIFT|GRATIS
+MSG_SUCCESS_PURCHASE_COINS|<size=26>Felicitaciones que usted ha comprado [%num] monedas</size>
+MSG_SUCCESS_TAKED_GIFT|<size=26>Felicitaciones se ha retirado su regalo de [%num] monedas!</size>
+MSG_FAIL_TAKED_GIFT|<size=26>Lo sentimos no fue un error, prueba de ritirar su regalo mas tarde</size>
+MSG_REMIND_GIFT|<size=26>Recuerde a retirar su regalo de bienvenida.\n¿Quieres hacerlo ahora?</size>
+MSG_FAILS_PURCHASE_COINS|<size=26>Lo sentimos, no accreditacion de éxito.\nPara proceder acreditatiòn, cerrar y empezar de nuevo la aplicacion.</size>
+MSG_FAILS_PURCHASE_VALIDATION|<size=26>Lo sentimos, compra no valido. Soporte de contactos</size>
+CHOICE_LEVEL|ELIJA LA MESA
+SINGLEPLAYER|SOLO
+MULTIPLAYER|MULTIJUGADOR
+LEVEL_BEGINNER|NIVEL\nPRINCIPIANTE
+LEVEL_MIDDLE|NIVEL\nINTERMEDIO
+LEVEL_EXPERT|NIVEL\nEXPERTO
+Pop_Up_Login|<size=26>Para jugar en modo multijugador tienes que entrar en el.\n\n¿Quieres entrar?</size>
+Beginner|Principiante
+Intermediate|Intermedio
+Expert|Experto
+ERROR_NETWORK_MULTIPLAYER_MENU|<size=26>Error de red.\nSólo juego para un solo jugador es posible.</size>
+RANDOM_OPPONENT|OPONENTE\nAL AZAR
+CREATE_TABLE|CREAR\nUNA MESA
+ALL_TABLES|TODAS LAS\nMESAS
+OPEN_TABLES|MESAS ABIERTAS
+REMOVE_TABLE|ELIMINAR\nUNA MESA
+OPTIONS_TITLE_CHOOSE_CARDS|Elija los naipes
+OPTIONS_SUBTITLE_CHOOSE_CARDS|<size=12>Selecciona los naipes Dal Negro favorita</size>
+OPTIONS_TITLE_GAME_MOD|ESTILO DE JUEGO
+OPTIONS_SUBTITLE_GAME_MOD|ELIGE MODOS DE JUEGO Y PUNTOS
+OPTIONS_TITLE_SOUNDS|Sonidos on/off
+OPTIONS_SUBTITLE_SOUNDS|<size=12>Enciende y apaga los sonidos en el juego</size>
+OPTIONS_TITLE_ROTATION|Bloqueo de rotación
+OPTIONS_SUBTITLE_ROTATION|<size=12>Configurar la rotación de la pantalla</size>
+OPTIONS_TITLE_ANIMATIONS|<size=19>ANIMACIONES DE TARJETAS</size>
+OPTIONS_SUBTITLE_ANIMATIONS|VELOCIDAD DE TARJETAS
+OPTIONS_TITLE_CHAT|CHAT ON/OFF
+OPTIONS_SUBTITLE_CHAT|ACTIVAR Y DESACTIVAR EL CHAT
+ANIMATIONS_SLOW|LENTE
+ANIMATIONS_NORMAL|NORMAL
+ANIMATIONS_FAST|RÁPIDO
+OTHER_TABLES|OTRAS MESAS
+WAIT_ACCEPT_CHALLENGE|<size=26>A la espera de </size><size=26><color=#e57900ff>[%user]</color></size><size=26> para aceptar el reto</size>
+CHALLENGE_SENT|<size=28><color=#ffffffff>DESAFIO ENVIADO</color></size>
+FOE_NOT_AVAILABLE|<size=26>Lo sentimos, adversario no aceptó el reto</size>
+PLAY_WITH_YOU|<size=26><color=#e57900ff>[%user]</color> quiere jugar con usted, usted toma el reto?</size>
+FOE_DENY|<size=26>Lo sentimos, <color=#e57900ff>[%user]</color> no aceptó el reto</size>
+LEAVE_GAME_SINGLE|<size=26>Seguro que deseas abandonare?</size>
+LEAVE_GAME_MULTI|<size=26><color=#e57900ff>Termina el juego</color> e incluso si pierden <color=#e57900ff>ganancias [%coins] moneda.</color>\n\nSeguro que deseas abandonare?</size>
+TITLE_LEAVE_GAME_MULTI|<size=25>Si deja a \nperder su premio</size>
+NAME_GAME|SCOPA
+WAIT_FULL_ROOM|<size=26>Espera el oponente...</size>
+FOE_DISCONNECT|<size=26>El oponente ha perdido la conexión a internet.</size>
+IDLE_DISCONNECT|<size=26>Lo siento, te he estado desconectado del juego por razones de inactividad</size>
+UNKOWN_DISCONNECT|<size=26>Lo siento, te he estado desconectado por problemas de conexión a internet</size>
+FOE_DISCONENCT_WITH_POINTS|<size=26>Lo sentimos <color=#e57900ff>[%foe]</color> ha cerrado la sesión, todavía ha ganado [%score] puntos</size>
+YOUR_TURN|Tu turno
+THINKING|Estoy pensando...
+CHAT|CHAT
+ENABLE_CHAT|Activar chat
+DISABLE_CHAT|Desactivar chat
+PLACEHOLDER_CHAT|Escribir aquí...
+SEND|Envía
+ERROR_NETWORK_LAST_GAMES|<size=26>Lo sentimos, no hay red. No es posible mostrar los ultimos openentes</size>
+TITLE_LAST_GAMES|ÚLTIMOS 20 OPONENTES
+TEXT_LAST_GAMES|<size=15>AGREGAR A LA LISTA DE FAVORITOS LOS JUGADORES.\nBLOQUEA A LOS JUGADORES QUE NO QUIERES JUGAR CON OTRA VEZ.</size>
+BUTTON_PREF_PLAYER_LIST|JUGADORES\nFAVORITOS
+BUTTON_BLOCK_PLAYER_LIST|JUGADORES\nBLOQUEADOS
+BUTTON_ADD_PREF|PONER
+BUTTON_ADD_BLOCK|BLOQUEAR
+TEXT_FREE_SLOT|<size=19>POSICIONES LIBRES</size>
+TEXT_JUST_ADDED|AÑADIDO
+TEXT_JUST_BLOCKED|BLOQUEADO
+BLOCKS_MENU|JUGADORES BLOQUEADOS
+PREFS_MENU|JUGADORES FAVORITOS
+FEEDBACK_ADD_BLOCK|<size=26><color=#e57900ff>[%user]</color> se ha insertado entre los jugadores bloqueados.\nEl no podrà pedirle jugar</size>
+CONFIRM_REMOVE_BLOCK|<size=26>¿Està usted seguro que quiere retirar a <color=#e57900ff>[%user]</color> de la lista de los jugadores bloqueados?</size>
+BUTTON_REMOVE|ELIMINA
+MSG_BANNER_BLOCK|Aumenta el número de jugadores\nque no pueden jugar contigo
+TITLE_BANNER_BLOCK|Bloquear a otros jugadores
+LABEL_BLOCK_MENU|ESTOS JUGADORES NO PUEDEN JUGAR CON USTED MÁS
+OVERSIZE_BLOCK|<size=26>Lo sentimos, no hay posiciones disponibles en la lista de jugadores bloqueados.\n\n¿Quieres comprar mas posiciones?</size>
+OVERSIZE_PREF|<size=26>Lo sentimos, no hay posiciones disponibles en la lista de jugadores favoritos.\n\n¿Quieres comprar mas posiciones?</size>
+LABEL_PREF_MENU|<size=16>JUGADORES QUE PUEDE FILTRAR EN LA LISTA DE MESAS ABIERTAS</size>
+TITLE_BANNER_PREF|Elegir otros jugadores
+MSG_BANNER_PREF|Aumenta el número de jugadores\nen la lista de los oponentes avoritos
+CONFIRM_REMOVE_PREF|<size=26>¿Està usted seguro que quiere retirar a <color=#e57900ff>[%user]</color> de la lista de los jugadores favoritos?</size>
+FEEDBACK_ADD_PREF|<size=26><color=#e57900ff>[%user]</color> se ha insertado entre los jugadores favoritos.\nSi abre una mesa, lo encontrerà facilmente</size>
+FILTER_TABLES|MESAS DE FILTRO
+FILTER_ALL_TABLES|TODAS LAS MESAS
+FILTER_PREFS_TABLES|JUGADORES FAVORITOS
+TITLE_WRITE_US|ENVIAR A NOSOTROS PREGUNTAS Y SUGERENCIAS
+PLACEHOLDER_MAIL_WRITE_US|TU EMAIL
+PLACEHOLDER_MESSAGE_WRITE_US|MENSAJE
+DATA_RECOVERY|RECUPERACIÓN DE DATOS
+TITLE_DATA_RECOVERY|ENTRE EMAIL UTILIZADA PARA EL REGISTRO
+BUTTON_DATA_RECOVERY|RECUPERAR DATOS
+LABEL_CODEX_RECOVERY_DATA|SI USTED HA RECIBIDO EL CÓDIGO DE RECUPERACIÓN\nHAGA CLIC AQUÍ
+BUTTON_CODEX_RECOVERY_DATA|INSERTAR CÓDIGO
+TITLE_INSERT_CODE|INSERTAR EL CÓDIGO RECIBIDO POR MAIL Y\nSELECCIONAR UNA NUEVA CONTRASEÑA
+PLACEHOLDER_CODE|CÓDIGO DE RECUPERACIÓN DE DATOS
+PLACEHOLDER_PSW|NUEVA CONTRASEÑA
+PLACEHOLDER_CONFIRM_NEW|CONFIRMAR NUEVA CONTRASEÑA
+MAIL_ERROR_FEEDBACK|<size=26>Lo sentimos, email <color=#e57900ff>[%mail]</color> no està registrado.</size>
+MAIL_SUCCESS_FEEDBACK|<size=23>Mail enviado a la dirección <color=#e57900ff>[%mail]</color>. Recuperar el código en la mail y insertarlo en la página de recuperación de datos. Compruebe que la mail no está terminada en carpeta de spam.</size>
+ERROR_FB_ACCOUNT|<size=22>La account para la que ha solicitado la recuperación de la contraseña está vinculada a su account de Facebook. Para iniciar sesión, simplemente presione el botón Entra a traves de Facebook en la pantalla de inicio.</size>
+ERROR_PASSWORD|<size=26>La dos contrasenas no corresponde. Comprobar y llenar de nuevo.</size>
+ERROR_TOKEN|<size=26>El código no es correcto. Compruebe el código en la email y intente otra vez.</size>
+SUCCESS_TOKEN|<size=26>Contrasena actualizada exitosamente.</size>
+TITLE_OTHER_GAMES|<size=25>OTROS FANTÁSTICOS JUEGOS</size>
+OTHER_GAMES_SCOPA|EL ÚNICO JUEGO\nDE LA SCOPA\nCON LOS NAIPES\nORIGINALES
+OTHER_GAMES_ASSO|EL ÚNICO JUEGO DE\nASSO PIGLIA TUTTO\nCON LOS NAIPES\nORIGINALES
+OTHER_GAMES_BRISCOLA|EL ÚNICO JUEGO\nDE LA BRISCA\nCON LOS NAIPES\nORIGINALES
+DOWNLOAD_FREE|DESCARGAR LIBRE
+WIN_MULTI_SHARE|¡TÚ GANAS\n[%pointsPlayer] A [%pointsFoe] CONTRA\n<color=#e57900ff>[%foe]</color>\n\nOBTIENES [%score] PUNTOS,\n[%pointsExp] PUNTOS DE EXPERIENCIA Y [%coins] MONEDAS.\n\nCOMPARTIR Y OBTENER\n[%coinsShare] MONEDA MÁS!
+WIN_SINGLE_SHARE|¡TÚ GANAS [%pointsPlayer] A [%pointsFoe] CONTRA\nEL NIVEL<color=#e57900ff>[%foe]</color>.\n\nOBTIENES [%score] PUNTOS,\n[%pointsExp] PUNTOS DE EXPERIENCIA Y [%coins] MONEDAS.\n\nCOMPARTIR Y OBTENER\n[%coinsShare] MONEDA MÁS!
+WIN_MULTI_UPPER|¡TÚ GANAS\n[%pointsPlayer] A [%pointsFoe] CONTRA\n[%foe]
+WIN_SINGLE_UPPER|¡TÚ GANAS\n[%pointsPlayer] A [%pointsFoe]
+WIN_SINGLE_PREMIUM_UPPER|¡TÚ GANAS\n[%pointsPlayer] A [%pointsFoe] CONTRA\n[%tableName]
+WIN_POPUP_ENDGAME_BOTTOM_TEXT|<size=26>OBTIENES</size>\n<color=#f1d245>[%coins] MONEDAS</color>\n<size=26>[%pointsExp] PUNTOS DE EXPERIENCIA\n[%score] PUNTOS CLASIFICACION</size>
+LOST_MULTI|HA PERDIDO\n[%pointsPlayer] A [%pointsFoe] CONTRA\n<color=#ffee61>[%foe]</color>\n\nUSTED GANA\n[%coins] MONEDA\nPARA HABER COMPLETADO EL PARTIDO
+LOST_SINGLE|HA PERDIDO\n[%pointsPlayer] A [%pointsFoe]
+LOST_SINGLE_PREMIUM|HA PERDIDO\n[%pointsPlayer] A [%pointsFoe] CONTRA\n<color=#ffee61>[%tableName]</color>.
+DRAW_MULTI|USTED HA IGUALADO [%pointsPlayer] A [%pointsFoe] CONTRA <color=#e57900ff>[%foe]</color>\n\nUSTED GANA [%coins] MONEDA PARA HABER COMPLETADO EL PARTIDO.
+DRAW_SINGLE|USTED HA IGUALADO [%pointsPlayer] A [%pointsFoe] CONTRA EL NIVEL <color=#e57900ff>[%foe]</color>.
+LEVEL_UP|¡HAS ALCANZADO EL\n<size=26><color=#00c400>NIVEL [%level]</color></size>\nSIGUE JUGANDO Y\nDESCUBRE TODOS LOS\nPREMIOS QUE TE ESPERAN!
+PLAY_AGAIN_MULTI|¿QUIERES JUGAR DE NUEVO CONTRA\n<color=#ffee61>[%foe]</color>?
+HEADER_WIN|¡FELICIDADES!
+HEADER_LOST|¡AY!
+HEADER_DRAW|
+WIN_SINGLE_NO_LOGGED|¡TÚ GANAS! [%pointsPlayer] A [%pointsFoe] CONTRA\nEL NIVEL <color=#e57900ff>[%foe]</color>.
+TITLE_SHARE|El juego de la SCOPA original DAL NEGRO
+MSG_SHARE_MULTI|He ganado contra [%foe] por [%pointsPlayer] a [%pointsFoe]!
+MSG_SHARE_SINGLE|He ganado contra el nivel [%foe] por [%pointsPlayer] a [%pointsFoe]!
+CAPTION_SHARE|¡Pruebalo GRATIS!
+JANUARY|ENERO
+FEBRUARY|FEBRERO
+MARCH|MARZO
+APRIL|ABRIL
+MAY|MAYO
+JUNE|JUNIO
+JULY|JULIO
+AUGUST|AGOSTO
+SEPTEMBER|SEPTIEMBRE
+OCTOBER|OCTUBRE
+NOVEMBER|NOVIEMBRE
+DECEMBER|DICIEMBRE
+SD_TITLE_AVATAR_CINEMA|ESTRELLAS DE CINE
+SD_TITLE_AVATAR_HEROES|SUPERHEROES
+SD_TITLE_AVATAR_FOOTBALL|CAMPEONES DE FÚTBOL
+SD_MSG_AVATAR_CINEMA|ELEGIR SU PERFIL DE ESTRELLAS!
+SD_MSG_AVATAR_HEROES|JUEGA COMO TU PERSONAJE FAVORITO!
+SD_MSG_AVATAR_FOOTBALL|¡LLEVE LA CAMISA FAVORITA!
+BEGINNER|PRINCIPIANTE
+INTERMEDIATE|INTERMEDIO
+EXPERT|EXPERTO
+MONTH|MES
+EXPERIENCE|EXPERENCIA
+TITLE_OPPONENTS_VIEW|VES LA CARA\nDE TUS DESAFÍOS
+MSG_OPPONENTS_VIEW|¡VES LA CARA DE\nLOS OPONENTES QUE\nTE INVITA A JUGAR!
+PRICE_OPPONENTS_VIEW|[%price]
+SD_TITLE_OPPONENTS_VIEW|VES SU DESAFÍO
+SD_MSG_OPPONENTS_VIEW|¡VES LA CARA DE LOS OPONENTES QUE LE INVITA A JUGAR Y ELIJA A QUIENES COMENZARÁ EL JUEGO!
+MONTHLY|MENSUAL
+HELP_POINTS_TITLE|PUNTOS Y CLASIFICACIÓN
+HELP_POINTS_SUBTITLE|PUNTOS, CLASIFICACIÓN Y NIVELES
+HELP_COINS_TITLE|MONEDAS
+HELP_COINS_SUBTITLE|GANAR, COMPRAR Y DESGASTAR MONEDAS
+HELP_PLAYERS_TITLE|OPONENTES
+HELP_PLAYERS_SUBTITLE|JUGADORES FAVORITOS Y JUGADORES BLOQUEADOS
+HELP_FAQ_TITLE|FAQ
+HELP_FAQ_SUBTITLE|PREGUNTAS FRECUENTES
+HELP_RULES_TITLE|REGLAS DE SCOPA
+HELP_RULES_SUBTITLE|APRENDE LAS REGLAS DEL JUEGO
+HELP_INFO_TITLE|INFO
+HELP_INFO_SUBTITLE|SOBRE EL JUEGO
+RULES|REGLAS
+OPPONENTS|OPONENTS
+POINTS|PUNTOS
+COINS|MONEDAS
+TERMS_CONDITIONS|Términos de Uso
+PRIVACY|Privacy policy
+COMING_SOON_CHAMPIONS|<size=22>EL PRÓXIMO MES ESTÁ DISPONIBLE LA PRIMERA LISTA DE CAMPEONES</size>
+LEVELS|NIVELES
+POINTS_EXPERIENCE|PUNTOS DE EXPERIENCIA: [%points]
+YOUR_POINTS_EXPERIENCE|SUS PUNTOS DE EXPERIENCIA
+FAQ|FAQ
+GAMEPLAY|JUEGO
+SIGN_UP|REGISTRO
+POINTS_ETC|PUNTOS, CLASIFICACIÓN, NIVELES
+LINK_ACCOUNT_FACEBOOK|CONECTAR A\nFACEBOOK
+UNLINK_ACCOUNT_FACEBOOK|ELIMINAR CONEXIÓN\nDE FACEBOOK
+CHAMPIONS_OF|CAMPEONES DE [%month]
+Search_opponent|<size=26>Búsqueda oponente...</size>
+Opponent_not_found|<size=26>Oponente no encontrado.</size>
+ACCOUNT_FACEBOOK_ALREADY_USE|<size=26>La cuenta de Facebook que desea vincular a su cuenta de juego ya está vinculada a otra cuenta de juego.\n\n¿Quieres recuperar tu account de juego anterior vinculada a Facebook?</size>
+EXPIRED_WEEKLY|<size=26>La semana en regalo para ver el rostro de su desafío es terminado.\n¿Quieres continuar a verlo?</size>
+TITLE_POP_UP_RESET_LEADERBOARDS|<size=17>LAS CLASIFICACIONES SON REDUCIDAS A CERO.\nNUEVO RETO DEL MES EN MARCHA!</size>
+MESSAGE_TABLE_ALREADY_SELECTED|<size=26>Ya tiene estos fondo</size>
+DOWNLOAD_COMPLETED|<size=26>Download completa</size>
+SENT_EMAIL|<size=26>Email inviada</size>
+ERROR_SENT_EMAIL|<size=26>Error envío  email</size>
+ERROR_NETWORK_LEADERBOARDS|<size=26>Lo sentimos, no hay red. No es posible mostrar las clasificaciones</size>
+USER_BANNED|<size=26>Esta account se ha desactivado</size>
+MSG_RESTORE_PURCHSE|<size=26>Compras restaurados con exito</size>
+INVITE_FRIENDS|<size=14>INVITAR AMIGOS</size>
+COMING_SOON_COINS|¡PRÓXIMAMENTE!
+TITLE_INVITE_FRIENDS|Scopa original Dal Negro
+MESSAGE_INVITE_FRIENDS|¡Prueba la Scopa original!
+CHOOSE_CARDS_TO_TAKE|Elija naipes para tomar
+Rounds|MANI
+Scopa|Scopa
+Cards|Tarjetas
+Coins|Denari
+Trump Card|Settebello
+Prime|Primiera
+Game Score|Puntos Round
+Previous Score|Puntos Anteriores
+Total|Total
+Continue|Continuar
+You|Te
+Him|él
+Napola|Napola
+Rebello|Rebello
+SCORE|PUNTAJE
+Classica|Clásico
+21_POINTS|21 PUNTOS
+11_POINTS|11 PUNTOS
+SINGLE_ROUND|1 ROUND
+THE_END|FINAL
+CONTINUE|<size=14>CONTINUAR</size>
+MESAGE_POP_UP_INFO_TABLE_PREMIUM|<size=20>ELIMINA TODA LA PUBLICIDAD CON\nSÓLO [%price] MONEDAS PARA CUALQUIER PARTIDO.\n\nPARA ACTIVAR ENCENDER EL INTERRUPTOR.</size>
+TEXT_TABLE_PREMIUM|ELIMINA LA\n<size=16><color=#FFFFFF>PUBLICIDAD</color></size>
+MSG_POP_UP_NO_COINS_TABLE_PREMIUM|<size=20>LOS SENTIMOS, USTED NO TIENE\nMONEDAS SUFICIENTES PARA ELIMINAR LA PUBLICIDAD.\n\nCOMPRA MONEDAS O CONTINÚA JUGANDO CON LA PUBLICIDAD.\n\n¿QUIERES COMPRAR MONEDAS?</size>
+MSG_POP_UP_NO_VALIDATE_TABLE_PREMIUM|<size=20>LOS SENTIMOS, USTED NO TIENE\nMONEDAS SUFICIENTES PARA ELIMINAR LA PUBLICIDAD.\n\nCONTINÚA JUGANDO CON LA PUBLICIDAD.</size>
+ConnectionMultiplayer|Conexión multijugador...
+LOGIN_REWARD_COMPLETE|<size=26>¡Gracias por registrarte!\n\nHas recibido [%coins] monedas de regalo.</size>
+LATER|Después
+PLACEHOLDER_RATE_US|Háganos saber su opinión
+NO_CONNECTION_PROFILE|<size=26>Error de conexión.\nEs posible que los datos de su perfil de usuario no estén actualizados.</size>
+MESSAGE_CONFIRM_RATE_US_ANDROID|Gracias!\nVas a Play Store\ny confirmas tu voto.
+MESSAGE_CONFIRM_RATE_US_IOS|Gracias!\nVas a App Store\ny confirmas tu voto.
+RATE|VOTA
+MESSAGE_NO_CHAT|PARA HABILITAR EL CHAT ES NECESARIO COMPLETAR [%tot] JUEGOS.\nEN EL MOMENTO QUE HAYAS COMPLETADO [%game]
+MESSAGE_NO_CHAT_1|<size=20>PARA HABILITAR EL CHAT ES NECESARIO COMPLETAR AL MENOS [%tot]% DE LOS ARRANQUES INICIADOS EN MULTIJUGADOR.\n\nEN EL MOMENTO, SU PORCENTAJE DE PARTIDOS COMPLETOS ES [%game]%</size>
+MESSAGE_BAN_DEVICE|<size=26>Como resultado de violaciones anteriores de las reglas del juego, es imposible crear un account.</size>
+MESSAGE_POP_UP_INFO_CHAT|<size=25><color=#e57900ff>¡NOTICIAS!</color>\n\n</size><size=22>El chat está ahora configurado en modo <color=#e57900ff>CERRADO.</color> Si lo desea, puede activarlo en el menú <color=#e57900ff>OPCIONES</color> o directamente dentro del <color=#e57900ff>CHAT.</color>\nEn la lista de las mesas abiertas puede ver qué jugadores tienen un chat abierto o cerrado.</size>
+AUTOPROMO_BRISCOLA_TITLE|JUEGA CON\n<color=#ff0000>LA BRISCA</color>\nORIGINAL
+AUTOPROMO_BRISCOLA_SUBTITLE|DESCARGA GRATIS\nLA BRISCA ORIGINAL
+AUTOPROMO_REMOVE_ADS_TITLE|¡JUEGA SIN\nPUBLICIDAD!
+AUTOPROMO_REMOVE_ADS_SUBTITLE|¿QUIERES JUGAR\nSIN INTERRUPCIONES?\n¡QUITAR PUBLICIDAD!
+MESSAGE_BAN_MULTIPLAYER|<size=20>DEBIDO A LA IRREGULARIDAD EN SU CUENTA, NO ES POSIBLE JUGAR EN MULTIJUGADOR CON ESTE PERFIL.\n\nPARA OBTENER INFORMACIÓN, PÓNGASE EN CONTACTO CON EL SOPORTE A TRAVÉS DE LA SECCIÓN APROPIADA PRESENTE EN EL JUEGO.</size>
+POP_UP_LOGIN_LEADERBOARD|<size=26>Si también quieres subir en el ranking y competir para convertirte en el mejor jugador de Scopa, ¡regístrate!\n\n¿Quieres entrar?</size>
+POP_UP_LOGIN_PROFILE|<size=26>Para crear y personalizar su perfil, regístrese. ¡¡Que estas esperando!!\n\n¿Quieres entrar?</size>
+RECOVERY_ACCOUNT|RECUPERAR ACCOUNT
+CONFIRM_ADD_FACEBOOK|Si conectas tu cuenta a Facebook, podrás ver el progreso del juego en todos los dispositivos conectados.\n\n¿Quieres continuar?
+CONFIRM_REMOVE_FACEBOOK|Si elimina el enlace de Facebook de su cuenta de juego, no podrá recuperar su progreso en todos sus dispositivos vinculados.\n\n¿Quieres proceder?
+WELCOME|¡BIENVENIDO!
+TEXT_GDPR|CONFIRMA QUE HA VISTO\nY ACEPTA NUESTROS NUEVOS\nTÉRMINOS DE SERVICIO Y\nPOLÍTICA DE PRIVACIDAD
+ACCEPT|ACEPTA
+PURCHASE_SUCCESS_AVATAR_SCENE_MENU|<size=26>Para utilizar el nuevo avatar, debes cambiar tu imagen de perfil.\n\n¿Quieres hacerlo ahora?</size>
+PURCHASE_SUCCESS_AVATAR_SCENE_TABLE|<size=26>Recuerda que para usar el nuevo avatar debes cambiar tu imagen de perfil.</size>
+TITLE_REMOVE_ADS_DETAILS|ELIMINAR PUBLICIDAD
+SUBTITLE_REMOVE_ADS_DETAILS|JUEGA SIN CUALQUIER INTERRUPCIÓN
+TEXT_REMOVE_ADS_WEEK|1 SEMANA\n<size=15>¡UTILIZA TUS MONEDAS!</size>
+TEXT_REMOVE_ADS_MONTH|1 MES\n<size=15>SUSCRIPCIÓN</size>
+TEXT_REMOVE_ADS_YEAR|EL MÁS POPULAR\n<size=22><color=#FFC600>1 AÑO</color></size>
+TEXT_REMOVE_ADS_PERMANENT|¡PARA SIEMPRE!
+ALERT_REMOVE_ADS_GENERIC|<size=26>Ya tienes una opción para eliminar anuncios.</size>
+ALERT_REMOVE_ADS_TEMP_COINS|<size=26>Ya ha activado la eliminación de anuncios durante una semana.</size>
+ALERT_REMOVE_ADS_SUBS|<size=26>Ya ha activado la eliminación de anuncios durante un mes.</size>
+ALERT_REMOVE_ADS_TEMP|<size=26>Ya ha activado la eliminación de anuncios durante un año.</size>
+ALERT_REMOVE_ADS_PERM|<size=26>Ya ha activado la eliminación de anuncios para siempre.</size>
+SUCCESS_REMOVE_ADS_TEMP_COINS|<size=26>Compra realizada con éxito.\n\nDisfruta del juego sin anuncios durante una semana.</size>
+SUCCESS_REMOVE_ADS_TEMP|<size=26>Compra realizada con éxito.\n\nDisfruta del juego sin anuncios durante un año.</size>
+SUCCESS_REMOVE_ADS_SUBS|<size=26>Compra realizada con éxito.\n\nDisfruta del juego sin anuncios durante un mes.</size>
+SUCCESS_REMOVE_ADS_PERM|<size=26>Compra realizada con éxito.\n\nDisfruta del juego sin anuncios para siempre.</size>
+ERROR_RESTORE_PURCHASE|<size=26>Lo sentimos, no hemos podido restaurar tus compras.\nComprueba tu conexión a Internet.</size>
+RESTORE_PURCHASE_SUCCESS|<size=26>Las compras se han restaurado correctamente.\nDisfruta.</size>
+INSTALL|INSTALAR
+AUTOPROMO_SOLITARIO_TITLE|PLAY WITH\nTHE CLASSIC\n<color=#ff0000>SOLITAIRE</color>
+NO_ADS|NO PUBLICIDAD
+WIN|GANA
+ENTER|ÚNETE
+FREE_ENTER|ÚNETE <color=#FBC438>GRATIS</color>
+CHALLENGE|DESAFÍO
+NAME_TABLE_FREE|TRADICIONAL
+NAME_TABLE_PREMIUM_1|EL MAESTRO
+NAME_TABLE_PREMIUM_2|LA BRIBONA
+MSG_BLOCK_PREMIUM|GANA [%num] "DESAFÍO [%name]" JUEGOS PARA ENTRAR!
+TEXT_UNLOCK_PREMIUM_TABLE|HAS DESBLOQUEADO LA MESA\n<size=22><color=#00c400>[%name]</color></size>\n\nPARA LA OCASIÓN\nTE DAMOS
+TEXT_UNLOCK_PREMIUM_TABLE_NO_PRICE|HAS DESBLOQUEADO LA MESA\n<size=22><color=#00c400>[%name]</color></size>
+TEXT_UNLOCK_PREMIUM_TABLE_TITLE_POPUP|¡FELICIDADES!
+TEXT_BUTTON_UNLOCK_PREMIUM_TABLE|OK
+ERROR_REDEEMREWARD_TABLE|ERROR DE CONEXIÓN.\n\nPUEDES RECOGER EL PREMIO MÁS TARDE.
+TABLE_PREMIUM_INSUFFICENT_FUNDS|No tienes suficientes monedas para jugar en la mesa\n<color=#00c400>[%name]</color>\n\n¿Quieres más monedas?
+TABLE_PREMIUM_ERROR_CONNECTION|Error de conexión.\n\nSe requiere una conexión a Internet para jugar en las mesas premium.
+TUTORIAL_MENU_TITLE_TEXT|¡NUEVO!
+TUTORIAL_MENU_FIRST_MIDDLE_TEXT|JUEGA COMO SIEMPRE\nCON LA MESA DE
+TUTORIAL_MENU_SECOND_MIDDLE_TEXT|A PARTIR DE HOY,\nDESCUBRE NUEVAS
+TUTORIAL_MENU_PREMIUM_TABLE_NAME_TEXT|MESAS FANTÁSTICAS
+TUTORIAL_MENU_FREE_TABLE_NAME_TEXT|DESAFÍO TRADICIONAL
+TITLE_LUCKY_WHEEL|¡EMPUJA Y GANA!
+ERROR_NETWORK_LUCKY_WHEEL|<size=26>Lo sentimos, no hay red. No es posible mostrar la Rueda de la Fortuna</size>
+TUTORIAL_ROUND_FORTUNE_POPUP_TOP_TEXT|JUEGA!\nEMPUJA!\nGANA!
+TUTORIAL_ROUND_FORTUNE_POPUP_BOTTOM_TEXT|¡COMPLETA LA SERIE\nPARA OBTENER PREMIOS CADA VEZ MÁS GRANDES!
+TUTORIAL_ROUND_FORTUNE_POPUP_BT_TEXT|COMIENZA
+FAIL_VIDEO_REWARD|<size=26>No hay vídeos disponibles en este momento.</size>
+TEXT_TIMER_LUCKY_WHEEL|INTENTOS GRATUITOS ENTRE
+TEXT_GET_LUCKY_WHEEL|OBTENER
+TEXT_FIND_LUCKY_WHEEL|LOS PREMIOS
+TEXT_PRIZE_WHEEL|¡EMPUJA Y\nGANA!
+AUTOPROMO_DAL_NEGRO_TITLE_MAINMENU|JUEGA TU\nJUEGO
+AUTOPROMO_DAL_NEGRO_DESCRIPTION_MAINMENU|LAS MEJORES CARTAS\nREGIONALES SE ENCUENTRAN\nEN EL SITIO DE DAL NEGRO
+AUTOPROMO_DAL_NEGRO_BT_TEXT|DESCUBRE
+STORE_BANNER_DAL_NEGRO_TITLE|UN MUNDO\nDE CARTAS
+STORE_BANNER_DAL_NEGRO_DESCRIPTION|DESCUBRE EL MUNDO\nDE LAS CARTAS\nDAL NEGRO
+CARDS_MENU_DAL_NEGRO_TITLE|¿TE ENCANTA JUGAR?
+CARDS_MENU_DAL_NEGRO_DESCRIPTION|SI TUS FAVORITAS SON LAS REGIONALES, ESCOGE\nDAL NEGRO
+PRODUCT_TAB_LUCKY_WHEEL_TITLE|¡EMPUJA Y\nGANA!
+PRODUCT_TAB_LUCKY_WHEEL_DESCRIPTION|¡GANA MONEDAS\nJUGANDO GRATIS! ¿SERÁS\nLO SUFICIENTEMENTE RÁPIDO?
+PRODUCT_TAB_COINS_TITLE|COMPRAR\nMONEDAS
+PRODUCT_TAB_COINS_DESCRIPTION|¡LLÉNATE DE MONEDAS\nY JUEGA EN TODAS LAS\nMESAS SIN PREOCUPACIONES!
+SAVE_CHANGES|GUARDAR CAMBIOS
+TITLE_GAME_MOD|ELEGIR MODO DE JUEGO
+TITLE_POINTS_MOD|ELEGIR PUNTOS POR PARTIDO
+TEXT_SPIN|GIRA
+TEXT_BONUS_LEVEL|BONUS NIVEL [%lev]
+TEXT_DAILY_PRIZE|PREMIO DEL DÍA
+TEXT_ACCESS_DAILY|INICIAR SESIÓN TODOS LOS DÍAS\n PARA OBTENER NUEVAS RECOMPENSAS
+TEXT_DAY|DÍA [%day]
+TEXT_TOUCH|TOQUE PARA OBTENER
+TEXT_POPUP_WHEEL_LUCKY|<size=26>¿ESTÁS SEGURO QUE QUIERES SALIR? \n\n</size>NO TENDRÁS OTRA OPORTUNIDAD HASTA EL SIGUIENTE NIVEL 
+TEXT_POPUP_STAY|QUÉDATE 
+TEXT_POPUP_QUIT|SALIR 
+TEXT_MIGRATION|CONFIRMA QUE HAS VISTO Y ACEPTAS NUESTROS NUEVOS TÉRMINOS DE SERVICIO Y POLÍTICA DE PRIVACIDAD.\nCON EL CONSENTIMIENTO EXPRESO DEL USUARIO, LOS DATOS PUEDEN SER TRANSFERIDOS A SERVIDORES UBICADOS EN EE. UU., LO QUE GARANTIZA UN NIVEL ADECUADO DE PROTECCIÓN BASADO EN CLÁUSULAS CONTRACTUALES ESTÁNDAR.
+TEXT_MIGRATION_DENIED|LO SENTIMOS, SIN LA APROBACIÓN DE NUESTROS NUEVOS TÉRMINOS DE SERVICIO Y LA POLÍTICA DE PRIVACIDAD NO ES POSIBLE CONTINUAR.
+DENY|DENEGAR
+APPLE_ALREADY_ADDED|ESTA CUENTA YA ESTÁ CONECTADA A APPLE
+APPLE_ALREADY_ADDED_TITLE|YA ESTÁS CONECTADO CON APPLE
+CONNECT_APPLE|CONÉCTATE A APPLE
+ERROR_ADD_APPLE|Tu cuenta de Apple no se puede conectar con el juego.
+SUCCESS_ADD_APPLE|Cuenta sincronizada con Apple.
+SUCCESS_ADD_APPLE_TITLE|APPLE CONECTADO
+CONFIRM_ADD_APPLE|Si conectas tu cuenta a Apple, podrás ver el progreso del juego en todos los dispositivos conectados.\n\n¿Quieres continuar?
+CONFIRM_ADD_APPLE_TITLE|CONÉCTATE A FACEBOOK
+NO_LINK_APPLE|Esta cuenta no está conectada a ninguna cuenta de Apple.
+CONFIRM_REMOVE_APPLE|Si elimina el enlace de Apple de su cuenta de juego, no podrá recuperar su progreso en todos sus dispositivos vinculados.\n\n¿Quieres proceder?
+LOGOUT_AP_COMPLETE_SUCCESS|Se ha desconectado tu cuenta de Apple.
+LINK_ACCOUNT_APPLE|Iniciar sesión con Apple
+UNLINK_ACCOUNT_APPLE|Logout

@@ -1,0 +1,488 @@
+LOADING_INTRO|LOADING, PLEASE WAIT...
+HAS_NICKNAME_PASSWORD|Do you have an account with nickname and password?
+LOGIN_WITH_NICKNAME|LOGIN WITH NICKNAME
+Disclosure_Facebook|WE WILL NOT POST ANYTHING WITHOUT YOUR CONSENT
+CONNECT_WITH_FACEBOOK|CONNECT WITH FACEBOOK
+CREATE_NEW_ACCOUNT|CREATE NEW ACCOUNT
+LOGIN|LOGIN
+PLAY_WITHOUT_LOGIN|PLAY
+INSERT_YOUR_DATA|ENTER YOUR DATA
+Forgot_your_password|FORGET YOUR PASSWORD OR NICKNAME ?
+All_fields_are_required|<size=26>All fields are required.</size>
+OK|OK
+SIGN_IN|SIGN-IN
+Email_Validate|<size=26>Email address is not valid</size>
+Connection|Connection to server...
+Network_Error_Create_Player|<size=26>Network error.\nUnable to create user.</size>
+Nickname_Already_Use|<size=26>Error.\nNickname already in use.</size>
+Email_Already_Use|<size=26>Email already in use.</size>
+Unable_Create_User|<size=26>Unable to create user.</size>
+New_Account_Created|<size=26>New account created.</size>
+Network_Error_Login|<size=26>Network error.\nCheck internet connection.</size>
+Invalid_Credentials|<size=26>Invalid credentials.</size>
+Locked_Account|<size=26>Account has been locked temporarily.\nPlease try again later.</size>
+CLOSE|CLOSE
+Quit_Game|<size=26>Do you want to quit the game?</size>
+YES|YES
+NO|NO
+MENU|MENU
+LEADERBOARDS|LEADERBOARDS
+CHAMPIONS|CHAMPIONS
+PLAYERS_LISTS|PLAYERS LISTS
+OPTIONS|OPTIONS
+PROFILE|PROFILE
+HELP|HELP
+MORE_GAMES|MORE GAMES
+STORE|STORE
+WRITE_US|WRITE US
+CHANGE_PROFILE|CHANGE PROFILE
+ERROR_ADD_FACEBOOK|<size=26>Can not connect the facebook account to game.</size>
+ACCOUNT_UPDATE|<size=26>Account connected to Facebook</size>
+ACCOUNT_ALREADY_FACEBOOK|<size=26>The account is already connected to Facebook</size>
+TITLE_BANNER_PROFILE_PREMIUM|<size=26>PREMIUM PROFILE</size>
+MSG_BANNER_PROFILE_PREMIUM|<size=16>SELECT NEW FANTASTIC IMAGES \nFOR YOUR PROFILE</size>
+BUTTON_BANNER_PROFILE_PREMIUM|DISCOVER
+CHANGE_USERNAME_PLACEHOLDER|NEW NICKNAME
+LABEL_CHANGE_AVATAR|SELECT YOUR AVATAR
+WANT_SAVE_PROFILE_CHANGE|<size=26>Do you want to save changes to profile</size>
+ERROR_SAVE_PROFILE_CHANGE|<size=26>Error.\nUnable to save changes to profile</size>
+ERROR_USERNAME_EMPTY|<size=26>Error, to save you must enter a new nickname.</size>
+MESSAGE_FIRST_CHANGE_USERNAME|<size=26>You can only change your nickname once.\n\nDo you want to proceed?</size>
+MESSAGE_SUCCESS_CHANGE_USERNAME|<size=26>Nickname updated successfully!</size>
+ERROR_COINS_CHANGE_USERNAME|<size=26>Sorry, you do not have enough coins.\nThe change of nickname has a cost of [%price] coins.</size>
+MESSAGE_CONFIRM_CHANGE_USERNAME|<size=26>The change of nickname has a cost of [%price] coins.\n\nDo you want to proceed?</size>
+BUTTON_SAVE_USERNAME|SAVE\nNICKNAME
+disclaimer|Clicking the Sign-in button \nacknowledge that you have read and accept the \n<color=#FFFFFFFF>Terms and Conditions</color> and <color=#FFFFFFFF>Privacy Policy</color>
+CARDS_DECK|CARDS DECK
+BANNER_CARDS|Choose your original<size=35>\nCARDS</size>
+Download|Download in progress:
+CANCEL|CANCEL
+TITLE_BANNER_BACKGROUND|<size=22>PREMIUM BACKGROUNDS</size>
+MSG_BANNER_BACKGROUND|CUSTOMIZE YOUR TABLE \nWITH MANY GREAT BACKGROUNDS
+PURCHASE|PURCHASE
+Verde|GREEN
+Rosso|RED
+Blu|BLUE
+Viola|VIOLET
+Beige|BEIGE
+Tovaglia|TABLECLOTH
+Rovere|OAK
+Teak|TEAK
+BACKGROUNDS|BACKGROUNDS
+YOUR_COINS|YOUR COINS
+PURCHASE_COINS|BUY COINS
+TITLE_REMOVE_ADS|<size=32>REMOVE\nADVERTISING</size>
+MSG_REMOVE_ADS|REMOVE ALL THE ADVERTISING\nAND PLAY WITHOUT\nANY INTERRUPTIONS
+RESTORE_PURCHASE|RESTORE PURCHASES
+price_ads|only [%price] for month
+MORE_DETAILS|DISCOVER
+TITLE_AVATARS_PREMIUM|SUPER\nAVATAR
+MSG_AVATARS_PREMIUM|CHOOSE AMONG THE MANY GREAT AVATARS TO HAVE AN EXCLUSIVE PROFILE
+PRICE_AVATARS_PREMIUM|[%price]
+TITLE_BACKGROUND_PREMIUM|EXCLUSIVE\n<size=32>BACKGROUNDS</size>
+MSG_BACKGROUND_PREMIUM|CUSTOMIZE THE BACKGROUNDS\nOF YOUR TABLE WITH\nA UNIQUE SET OF IMAGES
+PRICE_BACKGROUND_PREMIUM|[%price]
+TITLE_BLOCK_PLAYERS|BLOCK\nPLAYERS
+MSG_BLOCK_PLAYERS|INCREASE THE NUMBER OF\nPLAYERS YOU CAN BLOCK\nAND CHOOSE WHO TO PLAY AGAINST
+PRICE_BLOCK_PLAYERS|<size=20>from [%price]</size>
+TITLE_PREF_PLAYERS|FAVORITE\nOPPONENTS
+MSG_PREF_PLAYERS|INCREASE THE NUMBER OF PLAYERS YOU WANT TO FIND EASY TO PLAY AGAIN
+PRICE_PREF_PLAYERS|<size=20>from [%price]</size>
+DETAILS_MENU|PRODUCT DETAILS
+TROPHY|TROPHY
+SCORES|SCORES
+LEVEL|LEVEL
+PURCHASE_SUCCESS|<size=26>Congratulations,\nsuccessful purchase!</size>
+JUST_PURCHASE|<size=26>Item already purchased</size>
+NOT_ENOUGH_COINS|<size=26>Sorry, not enough coins to make the purchase.\n\nDo you want to buy coins?</size>
+PURCHASE_FAIL|<size=26>Sorry, purchase failed. Try later</size>
+SD_PRICE_AVATAR_FEMALE|[%price]
+SD_PRICE_AVATAR_MALE|[%price]
+SD_TITLE_AVATAR_FEMALE|SUPER AVATAR FOR HER
+SD_TITLE_AVATAR_MALE|SUPER AVATAR FOR HIM
+SD_MSG_AVATAR_FEMALE|Buy the package of four fantastic avatars to give to your profile just the right touch of exclusivity with which stand out
+SD_MSG_AVATAR_MALE|Buy the package of four fantastic avatars that you can use at any time to customize your profile
+SD_PRICE_BACKGROUNDS|[%price]
+SD_TITLE_BACKGROUNDS|<size=29>YOUR EXCLUSIVE BACKGROUNDS</size>
+SD_MSG_BACKGROUNDS|Decorate the background of the table with a fantastic series of images that will make your games even more exciting
+SD_TITLE_BLOCK_PLAYERS|Block players
+SD_MESSAGE_BLOCK_PLAYERS|Increase the number of players that you can\nenter in the list of blocked players
+SD_MESSAGE_COLOR_BLOCK_PLAYERS|These players can not play with you!
+SD_LABEL_CHOICE_BLOCK_PLAYERS|Choose the package you prefer
+SD_TEXT_BLOCK_PLAYERS|Block[%num]\nother players
+SD_PRICE_BLOCK_PLAYERS|[%price]
+SD_BLOCK_PLAYERS_DISCOUNT|[%num]% discount!
+SD_POST_IT_BLOCK_PLAYERS|Best buy
+SD_TITLE_PREF_PLAYERS|Favorite players
+SD_MESSAGE_PREF_PLAYERS|Increase the number of players that you can\nput in the list of favorite players
+SD_MESSAGE_COLOR_PREF_PLAYERS|It will be easier\nto find them in the list of open tables!
+SD_LABEL_CHOICE_PREF_PLAYERS|Choose the package you prefer
+SD_TEXT_PREF_PLAYERS|Add other\n[%num] players
+SD_PRICE_PREF_PLAYERS|[%price]
+SD_PREF_PLAYERS_DISCOUNT|[%num]% discount!
+TITLE_COINS_SMALL|SPECIAL OFFER
+TITLE_COINS_MEDIUM|HANDFUL OF\nCOINS
+TITLE_COINS_BIG|COINS\nRESERVE
+TITLE_COINS_HUGE|SUPER STOCK OF\nCOINS
+TITLE_COINS_MISTERY|MYSTERY BOX\n<size=14>HOW MANY COINS WILL YOU FIND?</size>
+TITLE_COINS_GIFT|WELCOME\n<size=16>[%num] COINS GIFT</size>
+COINS_SMALL|[%num]
+COINS_MEDIUM|[%num]
+COINS_BIG|[%num]
+COINS_HUGE|[%num]
+TEXT_COINS_SMALL|RATHER THAN\n<size=19>3,00€</size>
+TEXT_COINS_GIFT|COLLECT\nYOUR GIFT
+TEXT_COINS_MISTERY|TRY YOUR\nLUCK!
+PRICE_COINS_SMALL|[%price]
+PRICE_COINS_MEDIUM|[%price]
+PRICE_COINS_BIG|[%price]
+PRICE_COINS_HUGE|[%price]
+PRICE_COINS_MISTERY|[%price]
+PRICE_COINS_GIFT|FREE
+MSG_SUCCESS_PURCHASE_COINS|<size=26>Congratulations, you have purchased [%num] coins</size>
+MSG_SUCCESS_TAKED_GIFT|<size=26>Congratulations, you have withdrawn your gift of [%num] coins!</size>
+MSG_FAIL_TAKED_GIFT|<size=26>Sorry there was an error, try to withdraw your gift later</size>
+MSG_REMIND_GIFT|<size=26>Remember to withdraw your welcome gift.\nDo you want to do it now?</size>
+MSG_FAILS_PURCHASE_COINS|<size=26>Sorry, not successful accreditation.\nTo proceed with accreditation, close and start again the application.</size>
+MSG_FAILS_PURCHASE_VALIDATION|<size=26>Sorry, invalid purchase. Contact support of game</size>
+CHOICE_LEVEL|CHOOSE TABLE
+SINGLEPLAYER|SINGLE PLAYER
+MULTIPLAYER|MULTIPLAYER
+LEVEL_BEGINNER|BEGINNER\nLEVEL
+LEVEL_MIDDLE|INTERMEDIATE\nLEVEL
+LEVEL_EXPERT|EXPERT\nLEVEL
+Pop_Up_Login|<size=26>To play in multiplayer mode you need to log in.\n\nWant to login?</size>
+Beginner|Beginner
+Intermediate|Intermediate
+Expert|Expert
+ERROR_NETWORK_MULTIPLAYER_MENU|<size=26>Network error.\nOnly single player game is possible.</size>
+RANDOM_OPPONENT|RANDOM\nOPPONENT
+CREATE_TABLE|CREATE\nTABLE
+ALL_TABLES|ALL THE\nTABLES
+OPEN_TABLES|OPEN TABLES
+REMOVE_TABLE|REMOVE\nTABLE
+OPTIONS_TITLE_CHOOSE_CARDS|Select the cards
+OPTIONS_SUBTITLE_CHOOSE_CARDS|<size=12>Choose your favorite Dal Negro cards deck</size>
+OPTIONS_TITLE_GAME_MOD|GAME STYLE
+OPTIONS_SUBTITLE_GAME_MOD|CHOOSE GAME MODE AND POINTS
+OPTIONS_TITLE_SOUNDS|Sounds on/off
+OPTIONS_SUBTITLE_SOUNDS|<size=12>Turns on and off the sounds in the game</size>
+OPTIONS_TITLE_ROTATION|Rotation lock
+OPTIONS_SUBTITLE_ROTATION|<size=12>Set the screen rotation</size>
+OPTIONS_TITLE_ANIMATIONS|ANIMATIONS CARDS
+OPTIONS_SUBTITLE_ANIMATIONS|SPEED CARD ANIMATIONS
+OPTIONS_TITLE_CHAT|CHAT ON/OFF
+OPTIONS_SUBTITLE_CHAT|ACTIVATE AND DEACTIVATE THE CHAT
+ANIMATIONS_SLOW|SLOW
+ANIMATIONS_NORMAL|NORMAL
+ANIMATIONS_FAST|FAST
+OTHER_TABLES|OTHER TABLES
+WAIT_ACCEPT_CHALLENGE|<size=26>Waiting for </size><size=26><color=#e57900ff>[%user]</color></size><size=26> to accept the challenge</size>
+CHALLENGE_SENT|<size=28><color=#ffffffff>CHALLENGE SENT</color></size>
+FOE_NOT_AVAILABLE|<size=26>Sorry, foe did not accept the challenge</size>
+PLAY_WITH_YOU|<size=26><color=#e57900ff>[%user]</color> wants to play with you, do you accept?</size>
+FOE_DENY|<size=26>Sorry, <color=#e57900ff>[%user]</color> did not accept the challenge</size>
+LEAVE_GAME_SINGLE|<size=26>Are you sure you want to quit?</size>
+LEAVE_GAME_MULTI|<size=26><color=#e57900ff>Complete the game</color> and even if you lose <color=#e57900ff>you gain [%coins] coin.</color>\n\nAre you sure you want to quit?</size>
+TITLE_LEAVE_GAME_MULTI|<size=25>If you leave\nyou lose your reward</size>
+NAME_GAME|SCOPA
+WAIT_FULL_ROOM|<size=26>Waiting for other player...</size>
+FOE_DISCONNECT|<size=26>Sorry, the opponent has lost the internet connection.</size>
+IDLE_DISCONNECT|<size=26>Sorry, you have been disconnected for idle reasons</size>
+UNKOWN_DISCONNECT|<size=26>Sorry, you have been disconnected for internet connection problems</size>
+FOE_DISCONENCT_WITH_POINTS|<size=26>Sorry <color=#e57900ff>[%foe]</color> has left the table, you have gained [%score] points</size>
+YOUR_TURN|Your turn
+THINKING|Thinking...
+CHAT|CHAT
+ENABLE_CHAT|Enable chat
+DISABLE_CHAT|Disable chat
+PLACEHOLDER_CHAT|Insert message...
+SEND|SEND
+ERROR_NETWORK_LAST_GAMES|<size=26>Sorry, no network. It's  not possible to show the last opponents</size>
+TITLE_LAST_GAMES|Last 20 Opponents
+TEXT_LAST_GAMES|ADD TO THE FAVORITES LIST THE PLAYERS YOU WANT TO FIND.\nBLOCK THE PLAYERS YOU DON'T WANT TO PLAY AGAIN WITH.
+BUTTON_PREF_PLAYER_LIST|FAVORITE\nPLAYERS
+BUTTON_BLOCK_PLAYER_LIST|BLOCKED\nPLAYERS
+BUTTON_ADD_PREF|ADD
+BUTTON_ADD_BLOCK|BLOCK
+TEXT_FREE_SLOT|FREE SLOTS
+TEXT_JUST_ADDED|ADDED
+TEXT_JUST_BLOCKED|BLOCKED
+BLOCKS_MENU|BLOCKED PLAYERS
+PREFS_MENU|FAVORITE PLAYERS
+FEEDBACK_ADD_BLOCK|<size=26><color=#e57900ff>[%user]</color> has been inserted among the blocked players.\nHe won't be able to ask you to play.</size>
+CONFIRM_REMOVE_BLOCK|<size=26>Are you sure you want to remove <color=#e57900ff>[%user]</color> from the blocked players list?</size>
+BUTTON_REMOVE|REMOVE
+MSG_BANNER_BLOCK|Increases the number of players\nthat can not play with you
+TITLE_BANNER_BLOCK|Block other players
+LABEL_BLOCK_MENU|THESE PLAYERS CAN'T PLAY WITH YOU ANYMORE
+OVERSIZE_BLOCK|<size=26>Sorry, there are no more available slots in the blocked players list.\n\nDo you want to buy more slots?</size>
+OVERSIZE_PREF|<size=26>Sorry, there are no more available slots in the favorite players list.\n\nDo you want to buy more slots?</size>
+LABEL_PREF_MENU|PLAYERS YOU CAN FILTER IN THE LIST OF OPEN TABLES
+TITLE_BANNER_PREF|Choose other players
+MSG_BANNER_PREF|Increase the number of players\nin the favorite players list
+CONFIRM_REMOVE_PREF|<size=26>Are you sure you want to remove <color=#e57900ff>[%user]</color> from the favorite players list?</size>
+FEEDBACK_ADD_PREF|<size=26><color=#e57900ff>[%user]</color> has been inserted among the favorite players.\nIf he opens a table wuou will find him easily</size>
+FILTER_TABLES|FILTER TABLES
+FILTER_ALL_TABLES|ALL TABLES
+FILTER_PREFS_TABLES|PLAYERS FAVORITE
+TITLE_WRITE_US|SEND TIPS, QUESTIONS AND SUGGESTIONS
+PLACEHOLDER_MAIL_WRITE_US|YOUR EMAIL
+PLACEHOLDER_MESSAGE_WRITE_US|MESSAGE
+DATA_RECOVERY|DATA RECOVERY
+TITLE_DATA_RECOVERY|ENTER EMAIL USED FOR THE REGISTRATION
+BUTTON_DATA_RECOVERY|RECOVER DATA
+LABEL_CODEX_RECOVERY_DATA|IF YOU HAVE ALREADY RECEIVED THE RECOVERY CODE\nCLICK HERE
+BUTTON_CODEX_RECOVERY_DATA|INSERT CODE
+TITLE_INSERT_CODE|ENTER THE CODE RECEIVED VIA MAIL AND\nCHOOSE A NEW PASSWORD
+PLACEHOLDER_CODE|DATA RECOVERY CODE
+PLACEHOLDER_PSW|NEW PASSWORD
+PLACEHOLDER_CONFIRM_NEW|CONFIRM NEW PASSWORD
+MAIL_ERROR_FEEDBACK|<size=26>Sorry, the mail <color=#e57900ff>[%mail]</color> is not registered.</size>
+MAIL_SUCCESS_FEEDBACK|<size=23>Mail sent to the address <color=#e57900ff>[%mail]</color>. Recover the code in the mail and enter it in the data recovery page. Check that the mail is no finished in spam folder.</size>
+ERROR_FB_ACCOUNT|<size=22>The account for which you have requested password recovery is linked to your Facebook account.\nTo do login, simply press the Connect with Facebook button on the home screen.</size>
+ERROR_PASSWORD|<size=26>The two password do not match. Check it and fill up again.</size>
+ERROR_TOKEN|<size=26>The code is not correct. Check the code in the email and try again.</size>
+SUCCESS_TOKEN|<size=26>Password updated successfully.</size>
+TITLE_OTHER_GAMES|<size=25>OTHERS FANTASTIC GAMES</size>
+OTHER_GAMES_SCOPA|THE ONLY\nSCOPA GAME\nWITH THE\nORIGINAL CARDS
+OTHER_GAMES_ASSO|THE ONLY\nASSO PIGLIA TUTTO\nGAME WITH THE\nORIGINAL CARDS
+OTHER_GAMES_BRISCOLA|THE ONLY\nBRISCOLA GAME\nWITH THE\nORIGINAL CARDS
+DOWNLOAD_FREE|FREE DOWNLOAD
+WIN_MULTI_SHARE|YOU WIN [%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#e57900ff>[%foe]</color>\n\nYOU GAIN [%score] POINTS,\n[%pointsExp] EXPERIENCE POINTS AND [%coins] COINS.\n\nSHARE AND GET\n[%coinsShare] COIN MORE!
+WIN_SINGLE_SHARE|YOU WIN [%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#ffee61>[%foe]</color> LEVEL\n\nYOU GAIN [%score] POINTS,\n[%pointsExp] EXPERIENCE POINTS AND [%coins] COINS.\n\nSHARE AND GET\n[%coinsShare] COIN MORE!
+WIN_MULTI_UPPER|YOU WIN\n[%pointsPlayer] TO [%pointsFoe] AGAINST\n[%foe]
+WIN_SINGLE_UPPER|YOU WIN\n[%pointsPlayer] TO [%pointsFoe]
+WIN_SINGLE_PREMIUM_UPPER|YOU WIN\n[%pointsPlayer] TO [%pointsFoe] AGAINST\n[%tableName]
+WIN_POPUP_ENDGAME_BOTTOM_TEXT|<size=26>YOU GAIN</size>\n<color=#f1d245>[%coins] COINS</color>\n<size=26>[%pointsExp] EXPERIENCE POINTS\n[%score] LEADERBOARD POINTS</size>
+LOST_MULTI|YOU LOST\n[%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#ffee61>[%foe]</color>\n\nYOU GAIN\n[%coins] COINS\nTO HAVE COMPLETED THE MATCH.
+LOST_SINGLE|YOU LOST\n[%pointsPlayer] TO [%pointsFoe].
+LOST_SINGLE_PREMIUM|YOU LOST\n[%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#ffee61>[%tableName]</color>.
+DRAW_MULTI|YOU TIED [%pointsPlayer] TO [%pointsFoe] AGAINST <color=#e57900ff>[%foe]</color>\n\nYOU GAIN [%coins] COIN TO HAVE COMPLETED THE MATCH.
+DRAW_SINGLE|YOU TIED [%pointsPlayer] TO [%pointsFoe] AGAINST <color=#e57900ff>[%foe]</color> LEVEL
+LEVEL_UP|YOU HAVE REACHED\n<size=26><color=#00c400>LEVEL [%level]</color></size>\nKEEP ON PLAYING AND\nDISCOVER ALL THE PRIZES\nWAITING FOR YOU!
+PLAY_AGAIN_MULTI|WANT TO PLAY AGAINST\n<color=#ffee61>[%foe]</color> AGAIN?
+HEADER_WIN|WELL DONE!
+HEADER_LOST|OOOPS...
+HEADER_DRAW|
+WIN_SINGLE_NO_LOGGED|YOU WIN [%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#e57900ff>[%foe]</color> LEVEL
+TITLE_SHARE|The original DAL NEGRO SCOPA game
+MSG_SHARE_MULTI|I won against [%foe] for [%pointsPlayer] to [%pointsFoe]!
+MSG_SHARE_SINGLE|I won against level [%foe] for [%pointsPlayer] to [%pointsFoe]!
+CAPTION_SHARE|Try it FOR FREE!
+JANUARY|JANUARY
+FEBRUARY|FEBRUARY
+MARCH|MARCH
+APRIL|APRIL
+MAY|MAY
+JUNE|JUNE
+JULY|JULY
+AUGUST|AUGUST
+SEPTEMBER|SEPTEMBER
+OCTOBER|OCTOBER
+NOVEMBER|NOVEMBER
+DECEMBER|DECEMBER
+SD_TITLE_AVATAR_CINEMA|MOVIE STARS
+SD_TITLE_AVATAR_HEROES|SUPERHEROES
+SD_TITLE_AVATAR_FOOTBALL|SOCCER CHAMPIONS
+SD_MSG_AVATAR_CINEMA|CHOOSE YOUR STAR PROFILE!
+SD_MSG_AVATAR_HEROES|PLAY AS YOUR FAVORITE CHARACTER!
+SD_MSG_AVATAR_FOOTBALL|WEAR YOU FAVORITE SHIRT!
+BEGINNER|BEGINNER
+INTERMEDIATE|INTERMEDIATE
+EXPERT|EXPERT
+MONTH|MONTH
+EXPERIENCE|EXPERIENCE
+TITLE_OPPONENTS_VIEW|SEE YOUR\nCHALLENGER'S FACE
+MSG_OPPONENTS_VIEW|SEE THE OPPONENTS'\nFACE THAT INVITES\nYOU TO PLAY!
+PRICE_OPPONENTS_VIEW|[%price]
+SD_TITLE_OPPONENTS_VIEW|SEE YOUR CHALLENGER
+SD_MSG_OPPONENTS_VIEW|SEE THE OPPONENTS' FACE THAT INVITES YOU TO PLAY AND CHOOSE WHO TO START THE GAME WITH!
+MONTHLY|MONTHLY
+HELP_POINTS_TITLE|POINTS AND LEADERBOARDS
+HELP_POINTS_SUBTITLE|POINTS, LEADERBOARDS AND LEVELS
+HELP_COINS_TITLE|COINS
+HELP_COINS_SUBTITLE|EARN, BUY AND SPEND COINS
+HELP_PLAYERS_TITLE|OPPONENTS
+HELP_PLAYERS_SUBTITLE|FAVORITE PLAYERS AND BLOCKED PLAYERS
+HELP_FAQ_TITLE|FAQ
+HELP_FAQ_SUBTITLE|FREQUENTLY ASKED QUESTIONS
+HELP_RULES_TITLE|RULES OF SCOPA
+HELP_RULES_SUBTITLE|LEARN THE RULES OF THE GAME
+HELP_INFO_TITLE|INFO
+HELP_INFO_SUBTITLE|ABOUT THE GAME
+RULES|RULES
+OPPONENTS|OPPONENTS
+POINTS|POINTS
+COINS|COINS
+TERMS_CONDITIONS|Terms of service
+PRIVACY|Privacy policy
+COMING_SOON_CHAMPIONS|<size=22>THE NEXT MONTH WILL BE AVAILABLE THE FIRST LIST OF CHAMPIONS</size>
+LEVELS|LEVELS
+POINTS_EXPERIENCE|EXPERIENCE POINTS: [%points]
+YOUR_POINTS_EXPERIENCE|YOUR EXPERIENCE POINTS
+FAQ|FAQ
+GAMEPLAY|GAMEPLAY
+SIGN_UP|SIGN-UP
+POINTS_ETC|POINTS, LEADERBOARDS, LEVELS
+LINK_ACCOUNT_FACEBOOK|CONNECT TO\nFACEBOOK
+UNLINK_ACCOUNT_FACEBOOK|DELETE\nFACEBOOK CONNECTION
+CHAMPIONS_OF|[%month] CHAMPIONS
+Search_opponent|<size=26>Search opponent...</size>
+Opponent_not_found|<size=26>Opponent not found.</size>
+ACCOUNT_FACEBOOK_ALREADY_USE|<size=26>The facebook account you want to link to your game account is already linked to another game account.\n\nDo you want to recover your previous game account linked to Facebook?</size>
+EXPIRED_WEEKLY|<size=26>The gift week to see the face of your challenger is finished.\nDo you want to continue to see it?</size>
+TITLE_POP_UP_RESET_LEADERBOARDS|<size=18>THE LEADERBOARDS HAS BEEN RESET.\nTHE NEW MONTH'S CHALLENGE HAS STARTED!</size>
+MESSAGE_TABLE_ALREADY_SELECTED|<size=26>You already have this background</size>
+DOWNLOAD_COMPLETED|<size=26>Download complete</size>
+SENT_EMAIL|<size=26>Email sent</size>
+ERROR_SENT_EMAIL|<size=26>Error sending email</size>
+ERROR_NETWORK_LEADERBOARDS|<size=26>Sorry, no network. It's  not possible to show the leaderboards</size>
+USER_BANNED|<size=26>This account ha been disabled</size>
+MSG_RESTORE_PURCHSE|<size=26>Purchases successfully restored</size>
+INVITE_FRIENDS|INVITE FRIENDS
+COMING_SOON_COINS|COMING SOON!
+TITLE_INVITE_FRIENDS|Original Scopa Dal Negro
+MESSAGE_INVITE_FRIENDS|Try the original Italian Scopa!
+CHOOSE_CARDS_TO_TAKE|Choose the cards to take
+Rounds|ROUNDS
+Scopa|Scopa
+Cards|Cards
+Coins|Coins
+Trump Card|Trump Card
+Prime|Prime
+Game Score|Game Score
+Previous Score|Previous Score
+Total|Total
+Continue|Continue
+You|You
+Him|Him
+Napola|Napola
+Rebello|Rebello
+SCORE|SCORE
+Classica|Classic
+21_POINTS|21 POINTS
+11_POINTS|11 POINTS
+SINGLE_ROUND|1 ROUND
+THE_END|CLOSE
+CONTINUE|CONTINUE
+MESAGE_POP_UP_INFO_TABLE_PREMIUM|<size=20>REMOVE ALL THE ADVERTISING WITH\nONLY [%price] COINS FOR ANY MATCH.\n\nTO ACTIVATE TURN ON THE SWITCH.</size>
+TEXT_TABLE_PREMIUM|REMOVE\n<size=16><color=#FFFFFF>ADS</color></size>
+MSG_POP_UP_NO_COINS_TABLE_PREMIUM|<size=20>SORRY YOU DON'T HAVE ENOUGH COINS TO REMOVE ADVERTISING.\n\nBUY COINS OR CONTINUE TO PLAY WITH ADVERTISING.\n\nDO YOU WANT TO BUY COINS?</size>
+MSG_POP_UP_NO_VALIDATE_TABLE_PREMIUM|<size=20>SORRY YOU DON'T HAVE ENOUGH COINS TO REMOVE ADVERTISING.\n\nCONTINUE TO PLAY WITH ADVERTISING..</size>
+ConnectionMultiplayer|Connection to multiplayer...
+LOGIN_REWARD_COMPLETE|<size=26>Thank you for singup!\n\nYou have received [%coins] gift coins.</size>
+LATER|LATER
+PLACEHOLDER_RATE_US|Let us know your opinion
+NO_CONNECTION_PROFILE|<size=26>Network error.\nYour user profile data may not be up to date.</size>
+MESSAGE_CONFIRM_RATE_US_ANDROID|Thank you!\nGo to the Play Store\nand confirm your vote.
+MESSAGE_CONFIRM_RATE_US_IOS|Thank you!\nGo to the App Store\nand confirm your vote.
+RATE|RATE
+MESSAGE_NO_CHAT|TO ENABLE THE CHAT IT IS NECESSARY TO COMPLETE [%tot] MATCHES.\nAT THE MOMENT YOU HAVE COMPLETED [%game]
+MESSAGE_NO_CHAT_1|<size=20>TO ENABLE THE CHAT IT IS NECESSARY TO COMPLETE AT LEAST [%tot]% OF THE MATCHES STARTED IN MULTIPLAYER.\n\nAT THE MOMENT YOUR PERCENTAGE OF COMPLETE MATCHES IS [%game]%</size>
+MESSAGE_BAN_DEVICE|<size=26>As a result of previous violations of the game rules, it is impossible to create an account.</size>
+MESSAGE_POP_UP_INFO_CHAT|<size=25><color=#e57900ff>NEWS!</color>\n\n</size><size=22>The chat is now set to <color=#e57900ff>CLOSED</color> mode. If you want you can activate it in the <color=#e57900ff>OPTIONS</color> menu or directly inside the <color=#e57900ff>CHAT.</color>\nIn the list of open tables you can see which players have an open or closed chat.</size>
+AUTOPROMO_BRISCOLA_TITLE|PLAY WITH\nTHE ORIGINAL\n<color=#ff0000>BRISCOLA</color>
+AUTOPROMO_BRISCOLA_SUBTITLE|DOWNLOAD\nTHE ORIGINAL BRISCOLA\nFOR FREE
+AUTOPROMO_REMOVE_ADS_TITLE|PLAY WITHOUT\nADS
+AUTOPROMO_REMOVE_ADS_SUBTITLE|DO YOU WANT TO PLAY\nWITHOUT INTERRUPTIONS?\nREMOVE ADS!
+MESSAGE_BAN_MULTIPLAYER|<size=20>DUE TO IRREGULARITY IN YOUR ACCOUNT, IT IS NOT POSSIBLE TO PLAY IN MULTIPLAYER WITH THIS PROFILE.\n\nFOR INFORMATION CONTACT THE SUPPORT THROUGH THE APPROPRIATE SECTION PRESENT IN THE GAME.</size>
+POP_UP_LOGIN_LEADERBOARD|<size=26>If you also want to climb the rankings and compete to become the best Scopa player, register!!\n\nWant to login?</size>
+POP_UP_LOGIN_PROFILE|<size=26>To create and customize your profile, register. What are you waiting for!!\n\nWant to login?</size>
+RECOVERY_ACCOUNT|RECOVERY ACCOUNT
+CONFIRM_ADD_FACEBOOK|If you connect your account to Facebook, you will be able to have the game progress on all your connected devices.\n\nDo you want to proceed?
+CONFIRM_REMOVE_FACEBOOK|If you delete the Facebook link from your game account, you will not be able to retrieve your progress on all your linked devices.\n\nDo you want to proceed?
+WELCOME|WELCOME!
+TEXT_GDPR|CONFIRM THAT YOU HAVE VIEWED\nAND ACCEPT OUR NEW\nTERMS OF SERVICE AND\nPRIVACY POLICY
+ACCEPT|ACCEPT
+PURCHASE_SUCCESS_AVATAR_SCENE_MENU|<size=26>To use the new avatar, you need to change your profile picture.\n\nDo you want to change it now?</size>
+PURCHASE_SUCCESS_AVATAR_SCENE_TABLE|<size=26>Remember that to use the new avatar you need to change your profile picture.</size>
+TITLE_REMOVE_ADS_DETAILS|REMOVE THE ADVERTISING
+SUBTITLE_REMOVE_ADS_DETAILS|PLAY WITHOUT ANY INTERRUPTION 
+TEXT_REMOVE_ADS_WEEK|1 WEEK\n<size=15>USE YOUR COINS!</size>
+TEXT_REMOVE_ADS_MONTH|1 MONTH\n<size=15>SUBSCRIPTION</size>
+TEXT_REMOVE_ADS_YEAR|THE MOST POPULAR\n<size=22><color=#FFC600>1 YEAR</color></size>
+TEXT_REMOVE_ADS_PERMANENT|FOREVER!
+ALERT_REMOVE_ADS_GENERIC|<size=26>You already have an option of ads removal.</size>
+ALERT_REMOVE_ADS_TEMP_COINS|<size=26>You have already activated the ads removal for one week.</size>
+ALERT_REMOVE_ADS_SUBS|<size=26>You have already activated the ads removal for one month.</size>
+ALERT_REMOVE_ADS_TEMP|<size=26>You have already activated the ads removal for one year.</size>
+ALERT_REMOVE_ADS_PERM|<size=26>You have already activated the ads removal forever.</size>
+SUCCESS_REMOVE_ADS_TEMP_COINS|<size=26>Purchase successful.\n\nEnjoy the game without ads for one week.</size>
+SUCCESS_REMOVE_ADS_TEMP|<size=26>Purchase successful.\n\nEnjoy the game without ads for one year.</size>
+SUCCESS_REMOVE_ADS_SUBS|<size=26>Purchase successful.\n\nEnjoy the game without ads for one month.</size>
+SUCCESS_REMOVE_ADS_PERM|<size=26>Purchase successful.\n\nEnjoy the game without ads forever.</size>
+ERROR_RESTORE_PURCHASE|<size=26>Sorry your purchases could not be restored.\nPlease check your internet connection.</size>
+RESTORE_PURCHASE_SUCCESS|<size=26>Purchases have been successfully restored.\nEnjoy.</size>
+INSTALL|INSTALL
+AUTOPROMO_SOLITARIO_TITLE|PLAY WITH\nTHE CLASSIC\n<color=#ff0000>SOLITAIRE</color>
+NO_ADS|NO ADS
+WIN|WIN
+ENTER|ENTER
+FREE_ENTER|<color=#FBC438>FREE</color> ENTER
+CHALLENGE|CHALLENGE
+NAME_TABLE_FREE|TRADITIONAL
+NAME_TABLE_PREMIUM_1|THE MASTER
+NAME_TABLE_PREMIUM_2|THE RASCAL
+MSG_BLOCK_PREMIUM|WIN [%num] "CHALLENGE [%name]" MATCHES TO PLAY!
+TEXT_UNLOCK_PREMIUM_TABLE|YOU UNLOCKED THE TABLE\n<size=22><color=#00c400>[%name]</color></size>\n\nTO CELEBRATE,\nHERE'S A GIFT
+TEXT_UNLOCK_PREMIUM_TABLE_NO_PRICE|YOU UNLOCKED THE TABLE\n<size=22><color=#00c400>[%name]</color></size>
+TEXT_UNLOCK_PREMIUM_TABLE_TITLE_POPUP|CONGRATULATIONS!
+TEXT_BUTTON_UNLOCK_PREMIUM_TABLE|OK
+ERROR_REDEEMREWARD_TABLE|CONNECTION ERROR.\n\nYOU CAN COLLECT THE PRIZE LATER.
+TABLE_PREMIUM_INSUFFICENT_FUNDS|You don't have enough coins to play at the table\n<color=#00c400>[%name]</color>\n\nDo you want more coins?
+TABLE_PREMIUM_ERROR_CONNECTION|Connection error.\n\nAn internet connection is required to play at the premium tables.
+TUTORIAL_MENU_TITLE_TEXT|NEW!
+TUTORIAL_MENU_FIRST_MIDDLE_TEXT|PLAY AS ALWAYS\nWITH THE
+TUTORIAL_MENU_SECOND_MIDDLE_TEXT|AVAILABLE NOW:\nDISCOVER NEW
+TUTORIAL_MENU_PREMIUM_TABLE_NAME_TEXT|FANTASTIC TABLES
+TUTORIAL_MENU_FREE_TABLE_NAME_TEXT|TRADITIONAL CHALLENGE
+TITLE_LUCKY_WHEEL|PUSH AND WIN
+ERROR_NETWORK_LUCKY_WHEEL|<size=26>Sorry, no network. It's  not possible to show Wheel of Fortune section </size>
+TUTORIAL_ROUND_FORTUNE_POPUP_TOP_TEXT|PLAY!\nPUSH!\nWIN!
+TUTORIAL_ROUND_FORTUNE_POPUP_BOTTOM_TEXT|COMPLETE THE SERIES\nFOR BIGGER AND BIGGER PRIZES!
+TUTORIAL_ROUND_FORTUNE_POPUP_BT_TEXT|START
+FAIL_VIDEO_REWARD|<size=26>There are no available videos at the moment.</size>
+TEXT_TIMER_LUCKY_WHEEL|FREE ATTEMPTS BETWEEN
+TEXT_GET_LUCKY_WHEEL|OBTAIN
+TEXT_FIND_LUCKY_WHEEL|THE PRIZES
+TEXT_PRIZE_WHEEL|PUSH AND\nWIN
+AUTOPROMO_DAL_NEGRO_TITLE_MAINMENU|PLAY YOUR\nOWN GAME
+AUTOPROMO_DAL_NEGRO_DESCRIPTION_MAINMENU|THE BEST REGIONAL CARDS\nCAN BE FOUND ON THE\nDAL NEGRO WEBSITE
+AUTOPROMO_DAL_NEGRO_BT_TEXT|CHECK OUT
+STORE_BANNER_DAL_NEGRO_TITLE|A WORLD\nOF CARDS
+STORE_BANNER_DAL_NEGRO_DESCRIPTION|DISCOVER THE WORLD\nOF PLAYING CARDS\nDAL NEGRO
+CARDS_MENU_DAL_NEGRO_TITLE|DO YOU LIKE TO PLAY?
+CARDS_MENU_DAL_NEGRO_DESCRIPTION|IF YOUR FAVORITES ARE THE REGIONAL ONES, CHOOSE\nDAL NEGRO
+PRODUCT_TAB_LUCKY_WHEEL_TITLE|PUSH AND\nWIN!
+PRODUCT_TAB_LUCKY_WHEEL_DESCRIPTION|GAIN COINS BY\nPLAYING FOR FREE!\nWILL YOU BE\nFAST ENOUGH?
+PRODUCT_TAB_COINS_TITLE|BUY\nCOINS!
+PRODUCT_TAB_COINS_DESCRIPTION|GET MORE COINS\nAND PLAY ALL THE TABLES\nWITHOUT WORRIES!
+SAVE_CHANGES|SAVE CHANGES
+TITLE_GAME_MOD|CHOOSE GAME MODES
+TITLE_POINTS_MOD|CHOOSE POINTS PER MATCH
+TEXT_SPIN|SPIN
+TEXT_BONUS_LEVEL|BONUS LEVEL [%lev]
+TEXT_DAILY_PRIZE|AWARD OF THE DAY
+TEXT_ACCESS_DAILY|ENTER EVERY DAY\n FOR NEW REWARDS
+TEXT_DAY|DAY [%day]
+TEXT_TOUCH|TOUCH TO OBTAIN
+TEXT_POPUP_WHEEL_LUCKY|<size=26>ARE YOU SURE YOU WANT TO QUIT?\n\n</size>YOU WON’T HAVE ANOTHER CHANCE UNTIL NEXT LEVEL 
+TEXT_POPUP_STAY|STAY
+TEXT_POPUP_QUIT|QUIT
+TEXT_MIGRATION|CONFIRM THAT YOU HAVE VIEWED AND ACCEPT OUR NEW TERMS OF SERVICE AND PRIVACY POLICY.\nWITH THE EXPRESS CONSENT OF THE USER, THE DATA MAY BE TRANSFERRED TO SERVERS LOCATED IN THE USA, WHICH GUARANTEES AN ADEQUATE LEVEL OF PROTECTION BASED ON STANDARD CONTRACTUAL CLAUSES.
+TEXT_MIGRATION_DENIED|SORRY, WITHOUT APPROVAL OF OUR NEW TERMS OF SERVICE AND THE PRIVACY POLICY IT IS NOT POSSIBLE TO PROCEED.
+DENY|DENY
+APPLE_ALREADY_ADDED|THIS ACCOUNT IS ALREADY CONNECTED TO APPLE
+APPLE_ALREADY_ADDED_TITLE|APPLE ALREADY CONNECTED
+CONNECT_APPLE|CONNECT TO APPLE
+ERROR_ADD_APPLE|The Apple account cannot be connected to the game.
+SUCCESS_ADD_APPLE|Account synchronized with Apple.
+SUCCESS_ADD_APPLE_TITLE|APPLE CONNECTED
+CONFIRM_ADD_APPLE|If you connect your account to Apple, you will be able to have the game progress on all your connected devices.\n\nDo you want to proceed?
+CONFIRM_ADD_APPLE_TITLE|CONNECT TO APPLE
+NO_LINK_APPLE|This account is not connected to any Apple account.
+CONFIRM_REMOVE_APPLE|If you delete the Apple link from your game account, you will not be able to retrieve your progress on all your linked devices.\n\nDo you want to proceed?
+LOGOUT_AP_COMPLETE_SUCCESS|Your account has been disconnected from Apple.
+LINK_ACCOUNT_APPLE|Sign in with Apple
+UNLINK_ACCOUNT_APPLE|Logout
