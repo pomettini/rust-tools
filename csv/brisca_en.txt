@@ -12,7 +12,7 @@ All_fields_are_required|<size=26>All fields are required.</size>
 OK|OK
 SIGN_IN|SIGN-IN
 Email_Validate|<size=26>Email address is not valid</size>
-Connection|Connection to server...
+Connection|Connection to game...
 Network_Error_Create_Player|<size=26>Network error.\nUnable to create user.</size>
 Nickname_Already_Use|<size=26>Error.\nNickname already in use.</size>
 Email_Already_Use|<size=26>Email already in use.</size>
@@ -151,7 +151,7 @@ MULTIPLAYER|MULTIPLAYER
 LEVEL_BEGINNER|BEGINNER\nLEVEL
 LEVEL_MIDDLE|INTERMEDIATE\nLEVEL
 LEVEL_EXPERT|EXPERT\nLEVEL
-Pop_Up_Login|<size=26>To play in multiplayer mode you need to log in.\n\nWant to login?</size>
+Pop_Up_Login|<size=26>To play in multiplayer mode you need to log in.\nWant to login?</size>
 Beginner|Beginner
 Intermediate|Intermediate
 Expert|Expert
@@ -163,19 +163,14 @@ OPEN_TABLES|OPEN TABLES
 REMOVE_TABLE|REMOVE\nTABLE
 OPTIONS_TITLE_CHOOSE_CARDS|Select the cards
 OPTIONS_SUBTITLE_CHOOSE_CARDS|<size=12>Choose your favorite Dal Negro cards deck</size>
-OPTIONS_TITLE_GAME_MOD|GAME STYLE
-OPTIONS_SUBTITLE_GAME_MOD|CHOOSE GAME MODE AND POINTS
+OPTIONS_TITLE_CHOOSE_BACK|Select the background
+OPTIONS_SUBTITLE_CHOOSE_BACK|<size=12>Choose the table background</size>
 OPTIONS_TITLE_SOUNDS|Sounds on/off
 OPTIONS_SUBTITLE_SOUNDS|<size=12>Turns on and off the sounds in the game</size>
 OPTIONS_TITLE_ROTATION|Rotation lock
 OPTIONS_SUBTITLE_ROTATION|<size=12>Set the screen rotation</size>
-OPTIONS_TITLE_ANIMATIONS|ANIMATIONS CARDS
-OPTIONS_SUBTITLE_ANIMATIONS|SPEED CARD ANIMATIONS
-OPTIONS_TITLE_CHAT|CHAT ON/OFF
-OPTIONS_SUBTITLE_CHAT|ACTIVATE AND DEACTIVATE THE CHAT
-ANIMATIONS_SLOW|SLOW
-ANIMATIONS_NORMAL|NORMAL
-ANIMATIONS_FAST|FAST
+OPTIONS_TITLE_SHOW_POINTS|Show Points
+OPTIONS_SUBTITLE_SHOW_POINTS|Shows points during the game
 OTHER_TABLES|OTHER TABLES
 WAIT_ACCEPT_CHALLENGE|<size=26>Waiting for </size><size=26><color=#e57900ff>[%user]</color></size><size=26> to accept the challenge</size>
 CHALLENGE_SENT|<size=28><color=#ffffffff>CHALLENGE SENT</color></size>
@@ -185,7 +180,7 @@ FOE_DENY|<size=26>Sorry, <color=#e57900ff>[%user]</color> did not accept the cha
 LEAVE_GAME_SINGLE|<size=26>Are you sure you want to quit?</size>
 LEAVE_GAME_MULTI|<size=26><color=#e57900ff>Complete the game</color> and even if you lose <color=#e57900ff>you gain [%coins] coin.</color>\n\nAre you sure you want to quit?</size>
 TITLE_LEAVE_GAME_MULTI|<size=25>If you leave\nyou lose your reward</size>
-NAME_GAME|SCOPA
+NAME_GAME|BRISCOLA
 WAIT_FULL_ROOM|<size=26>Waiting for other player...</size>
 FOE_DISCONNECT|<size=26>Sorry, the opponent has lost the internet connection.</size>
 IDLE_DISCONNECT|<size=26>Sorry, you have been disconnected for idle reasons</size>
@@ -258,15 +253,16 @@ WIN_POPUP_ENDGAME_BOTTOM_TEXT|<size=26>YOU GAIN</size>\n<color=#f1d245>[%coins] 
 LOST_MULTI|YOU LOST\n[%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#ffee61>[%foe]</color>\n\nYOU GAIN\n[%coins] COINS\nTO HAVE COMPLETED THE MATCH.
 LOST_SINGLE|YOU LOST\n[%pointsPlayer] TO [%pointsFoe].
 LOST_SINGLE_PREMIUM|YOU LOST\n[%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#ffee61>[%tableName]</color>.
-DRAW_MULTI|YOU TIED [%pointsPlayer] TO [%pointsFoe] AGAINST <color=#e57900ff>[%foe]</color>\n\nYOU GAIN [%coins] COIN TO HAVE COMPLETED THE MATCH.
-DRAW_SINGLE|YOU TIED [%pointsPlayer] TO [%pointsFoe] AGAINST <color=#e57900ff>[%foe]</color> LEVEL
+DRAW_MULTI|YOU TIED\n[%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#ffee61>[%foe]</color>\n\nYOU GAIN\n[%coins] COINS\nTO HAVE COMPLETED THE MATCH
+DRAW_SINGLE|YOU TIED\n[%pointsPlayer] TO [%pointsFoe]
+DRAW_SINGLE_PREMIUM|YOU SCORED A DRAW WITH\n<color=#ffee61>[%tableName]</color>\n\n[%tableName] GIVES YOU BACK THE ENTRY FEE
 LEVEL_UP|YOU HAVE REACHED\n<size=26><color=#00c400>LEVEL [%level]</color></size>\nKEEP ON PLAYING AND\nDISCOVER ALL THE PRIZES\nWAITING FOR YOU!
 PLAY_AGAIN_MULTI|WANT TO PLAY AGAINST\n<color=#ffee61>[%foe]</color> AGAIN?
 HEADER_WIN|WELL DONE!
 HEADER_LOST|OOOPS...
-HEADER_DRAW|
+HEADER_DRAW|OOOPS...
 WIN_SINGLE_NO_LOGGED|YOU WIN [%pointsPlayer] TO [%pointsFoe] AGAINST\n<color=#e57900ff>[%foe]</color> LEVEL
-TITLE_SHARE|The original DAL NEGRO SCOPA game
+TITLE_SHARE|The original DAL NEGRO BRISCOLA game
 MSG_SHARE_MULTI|I won against [%foe] for [%pointsPlayer] to [%pointsFoe]!
 MSG_SHARE_SINGLE|I won against level [%foe] for [%pointsPlayer] to [%pointsFoe]!
 CAPTION_SHARE|Try it FOR FREE!
@@ -307,7 +303,7 @@ HELP_PLAYERS_TITLE|OPPONENTS
 HELP_PLAYERS_SUBTITLE|FAVORITE PLAYERS AND BLOCKED PLAYERS
 HELP_FAQ_TITLE|FAQ
 HELP_FAQ_SUBTITLE|FREQUENTLY ASKED QUESTIONS
-HELP_RULES_TITLE|RULES OF SCOPA
+HELP_RULES_TITLE|RULES OF BRISCOLA
 HELP_RULES_SUBTITLE|LEARN THE RULES OF THE GAME
 HELP_INFO_TITLE|INFO
 HELP_INFO_SUBTITLE|ABOUT THE GAME
@@ -342,28 +338,8 @@ USER_BANNED|<size=26>This account ha been disabled</size>
 MSG_RESTORE_PURCHSE|<size=26>Purchases successfully restored</size>
 INVITE_FRIENDS|INVITE FRIENDS
 COMING_SOON_COINS|COMING SOON!
-TITLE_INVITE_FRIENDS|Original Scopa Dal Negro
-MESSAGE_INVITE_FRIENDS|Try the original Italian Scopa!
-CHOOSE_CARDS_TO_TAKE|Choose the cards to take
-Rounds|ROUNDS
-Scopa|Scopa
-Cards|Cards
-Coins|Coins
-Trump Card|Trump Card
-Prime|Prime
-Game Score|Game Score
-Previous Score|Previous Score
-Total|Total
-Continue|Continue
-You|You
-Him|Him
-Napola|Napola
-Rebello|Rebello
-SCORE|SCORE
-Classica|Classic
-21_POINTS|21 POINTS
-11_POINTS|11 POINTS
-SINGLE_ROUND|1 ROUND
+TITLE_INVITE_FRIENDS|Briscola Dal Negro
+MESSAGE_INVITE_FRIENDS|Try the original Italian Briscola!
 THE_END|CLOSE
 CONTINUE|CONTINUE
 MESAGE_POP_UP_INFO_TABLE_PREMIUM|<size=20>REMOVE ALL THE ADVERTISING WITH\nONLY [%price] COINS FOR ANY MATCH.\n\nTO ACTIVATE TURN ON THE SWITCH.</size>
@@ -381,14 +357,10 @@ RATE|RATE
 MESSAGE_NO_CHAT|TO ENABLE THE CHAT IT IS NECESSARY TO COMPLETE [%tot] MATCHES.\nAT THE MOMENT YOU HAVE COMPLETED [%game]
 MESSAGE_NO_CHAT_1|<size=20>TO ENABLE THE CHAT IT IS NECESSARY TO COMPLETE AT LEAST [%tot]% OF THE MATCHES STARTED IN MULTIPLAYER.\n\nAT THE MOMENT YOUR PERCENTAGE OF COMPLETE MATCHES IS [%game]%</size>
 MESSAGE_BAN_DEVICE|<size=26>As a result of previous violations of the game rules, it is impossible to create an account.</size>
-MESSAGE_POP_UP_INFO_CHAT|<size=25><color=#e57900ff>NEWS!</color>\n\n</size><size=22>The chat is now set to <color=#e57900ff>CLOSED</color> mode. If you want you can activate it in the <color=#e57900ff>OPTIONS</color> menu or directly inside the <color=#e57900ff>CHAT.</color>\nIn the list of open tables you can see which players have an open or closed chat.</size>
-AUTOPROMO_BRISCOLA_TITLE|PLAY WITH\nTHE ORIGINAL\n<color=#ff0000>BRISCOLA</color>
-AUTOPROMO_BRISCOLA_SUBTITLE|DOWNLOAD\nTHE ORIGINAL BRISCOLA\nFOR FREE
+AUTOPROMO_SCOPA_TITLE|PLAY WITH\nTHE ORIGINAL\n<color=#007a34>SCOPA</color>
+AUTOPROMO_SCOPA_SUBTITLE|DOWNLOAD\nTHE ORIGINAL SCOPA\nFOR FREE
 AUTOPROMO_REMOVE_ADS_TITLE|PLAY WITHOUT\nADS
 AUTOPROMO_REMOVE_ADS_SUBTITLE|DO YOU WANT TO PLAY\nWITHOUT INTERRUPTIONS?\nREMOVE ADS!
-MESSAGE_BAN_MULTIPLAYER|<size=20>DUE TO IRREGULARITY IN YOUR ACCOUNT, IT IS NOT POSSIBLE TO PLAY IN MULTIPLAYER WITH THIS PROFILE.\n\nFOR INFORMATION CONTACT THE SUPPORT THROUGH THE APPROPRIATE SECTION PRESENT IN THE GAME.</size>
-POP_UP_LOGIN_LEADERBOARD|<size=26>If you also want to climb the rankings and compete to become the best Scopa player, register!!\n\nWant to login?</size>
-POP_UP_LOGIN_PROFILE|<size=26>To create and customize your profile, register. What are you waiting for!!\n\nWant to login?</size>
 RECOVERY_ACCOUNT|RECOVERY ACCOUNT
 CONFIRM_ADD_FACEBOOK|If you connect your account to Facebook, you will be able to have the game progress on all your connected devices.\n\nDo you want to proceed?
 CONFIRM_REMOVE_FACEBOOK|If you delete the Facebook link from your game account, you will not be able to retrieve your progress on all your linked devices.\n\nDo you want to proceed?
@@ -425,7 +397,7 @@ NAME_TABLE_FREE|TRADITIONAL
 NAME_TABLE_PREMIUM_1|THE MASTER
 NAME_TABLE_PREMIUM_2|THE RASCAL
 MSG_BLOCK_PREMIUM|WIN [%num] "CHALLENGE [%name]" MATCHES TO PLAY!
-TEXT_UNLOCK_PREMIUM_TABLE|YOU UNLOCKED THE TABLE\n<size=22><color=#00c400>[%name]</color></size>\n\nTO CELEBRATE,\nHERE'S A GIFT
+TEXT_UNLOCK_PREMIUM_TABLE|YOU UNLOCKED THE TABLE\n<size=24><color=#00c400>[%name]</color></size>\n\nTO CELEBRATE,\nHERE'S A GIFT
 TEXT_UNLOCK_PREMIUM_TABLE_NO_PRICE|YOU UNLOCKED THE TABLE\n<size=22><color=#00c400>[%name]</color></size>
 TEXT_UNLOCK_PREMIUM_TABLE_TITLE_POPUP|CONGRATULATIONS!
 TEXT_BUTTON_UNLOCK_PREMIUM_TABLE|OK
@@ -440,7 +412,7 @@ TUTORIAL_MENU_FREE_TABLE_NAME_TEXT|TRADITIONAL CHALLENGE
 TITLE_LUCKY_WHEEL|PUSH AND WIN
 ERROR_NETWORK_LUCKY_WHEEL|<size=26>Sorry, no network. It's  not possible to show Wheel of Fortune section </size>
 TUTORIAL_ROUND_FORTUNE_POPUP_TOP_TEXT|PLAY!\nPUSH!\nWIN!
-TUTORIAL_ROUND_FORTUNE_POPUP_BOTTOM_TEXT|COMPLETE THE SERIES\nFOR BIGGER AND BIGGER PRIZES!
+TUTORIAL_ROUND_FORTUNE_POPUP_BOTTOM_TEXT|COMPLETE THE SERIES\nFOR INCREASINGLY RICH AWARDS!
 TUTORIAL_ROUND_FORTUNE_POPUP_BT_TEXT|START
 FAIL_VIDEO_REWARD|<size=26>There are no available videos at the moment.</size>
 TEXT_TIMER_LUCKY_WHEEL|FREE ATTEMPTS BETWEEN
@@ -458,9 +430,6 @@ PRODUCT_TAB_LUCKY_WHEEL_TITLE|PUSH AND\nWIN!
 PRODUCT_TAB_LUCKY_WHEEL_DESCRIPTION|GAIN COINS BY\nPLAYING FOR FREE!\nWILL YOU BE\nFAST ENOUGH?
 PRODUCT_TAB_COINS_TITLE|BUY\nCOINS!
 PRODUCT_TAB_COINS_DESCRIPTION|GET MORE COINS\nAND PLAY ALL THE TABLES\nWITHOUT WORRIES!
-SAVE_CHANGES|SAVE CHANGES
-TITLE_GAME_MOD|CHOOSE GAME MODES
-TITLE_POINTS_MOD|CHOOSE POINTS PER MATCH
 TEXT_SPIN|SPIN
 TEXT_BONUS_LEVEL|BONUS LEVEL [%lev]
 TEXT_DAILY_PRIZE|AWARD OF THE DAY

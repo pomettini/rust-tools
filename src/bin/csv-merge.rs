@@ -17,6 +17,13 @@ fn multiple_csv_to_hashmap(multiple_csv: Vec<&str>) -> HashMap<&str, Vec<&str>> 
 
     map
 }
+
+fn change_parameters_format(input: &mut String) {
+    // TODO: Replace with Regex for consistency
+    *input = input.replace("[%", "{");
+    *input = input.replace(']', "}");
+}
+
 fn main() {
     let mut input: Vec<&str> = Vec::new();
     input.push(include_str!("../../csv/brisca_en.txt"));
@@ -24,11 +31,14 @@ fn main() {
     input.push(include_str!("../../csv/brisca_es.txt"));
 
     let mut output = String::new();
-    output.push_str("Key,Type,Desc,English,Italian,Spanish\n");
+    output.push_str("Key;Type;Desc;English;Italian;Spanish\n");
 
     multiple_csv_to_hashmap(input).into_iter().for_each(|key| {
-        output.push_str(&format!("{},Text,,{}\n", key.0, key.1.join(",")));
+        output.push_str(&format!("{};Text;;{}\n", key.0, key.1.join(";")));
     });
+
+    // Changing terms format from [%something] to {something}
+    // change_parameters_format(&mut output);
 
     let mut file = File::create("brisca_merged.csv").unwrap();
     file.write_all(output.as_bytes()).unwrap();

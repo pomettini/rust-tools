@@ -18,7 +18,7 @@ Nickname_Already_Use|<size=26>Impossibile creare utente,\nnickname già in uso.<
 Email_Already_Use|<size=26>Impossibile creare utente,\nemail già registrata.</size>
 Unable_Create_User|<size=26>Impossibile creare l'utente.</size>
 New_Account_Created|<size=26>Nuovo utente creato.</size>
-Network_Error_Login|<size=26>Errore di connessione.\nControlla il tuo collegamento ad internet.</size>
+Network_Error_Login|<size=26>Spiacente assenza di rete.\nControllare la connessione internet.</size>
 Invalid_Credentials|<size=26>Nickname o password non validi.</size>
 Locked_Account|<size=26>Account temporaneamente bloccato.\nRiprovare più tardi.</size>
 CLOSE|CHIUDI
@@ -151,7 +151,7 @@ MULTIPLAYER|MULTIPLAYER
 LEVEL_BEGINNER|LIVELLO\nPRINCIPIANTE
 LEVEL_MIDDLE|LIVELLO\nINTERMEDIO
 LEVEL_EXPERT|LIVELLO\nESPERTO
-Pop_Up_Login|<size=26>Per giocare in modalità multiplayer è necessario effettuare il login.\n\nVuoi fare il login?</size>
+Pop_Up_Login|<size=26>Per giocare in modalità multiplayer è necessario effettuare il login.\nVuoi fare il login?</size>
 Beginner|Principiante
 Intermediate|Intermedio
 Expert|Esperto
@@ -163,19 +163,14 @@ OPEN_TABLES|TAVOLI APERTI
 REMOVE_TABLE|RIMUOVI\nTAVOLO
 OPTIONS_TITLE_CHOOSE_CARDS|Scegli le carte
 OPTIONS_SUBTITLE_CHOOSE_CARDS|Seleziona il mazzo Dal Negro che preferisci
-OPTIONS_TITLE_GAME_MOD|STILE DI GIOCO
-OPTIONS_SUBTITLE_GAME_MOD|SCEGLI MODALITÀ DI GIOCO E PUNTI
+OPTIONS_TITLE_CHOOSE_BACK|Scegli lo sfondo
+OPTIONS_SUBTITLE_CHOOSE_BACK|Seleziona lo sfondo del tavolo di gioco
 OPTIONS_TITLE_SOUNDS|Suoni on/off
 OPTIONS_SUBTITLE_SOUNDS|Attiva e disattiva i suoni nel gioco
 OPTIONS_TITLE_ROTATION|Blocco rotazione
 OPTIONS_SUBTITLE_ROTATION|Imposta la rotazione dello schermo
-OPTIONS_TITLE_ANIMATIONS|ANIMAZIONI CARTE
-OPTIONS_SUBTITLE_ANIMATIONS|VELOCITA' ANIMAZIONI DELLE CARTE
-OPTIONS_TITLE_CHAT|CHAT ON/OFF
-OPTIONS_SUBTITLE_CHAT|ATTIVA E DISATTIVA LA CHAT
-ANIMATIONS_SLOW|LENTO
-ANIMATIONS_NORMAL|NORMALE
-ANIMATIONS_FAST|VELOCE
+OPTIONS_TITLE_SHOW_POINTS|Visualizza punti
+OPTIONS_SUBTITLE_SHOW_POINTS|Mostra i punti durante la partita
 OTHER_TABLES|ALTRI TAVOLI
 WAIT_ACCEPT_CHALLENGE|<size=26>In attesa che </size><size=26><color=#e57900ff>[%user]</color></size><size=26> accetti la sfida</size>
 CHALLENGE_SENT|<size=28><color=#ffffffff>SFIDA INVIATA</color></size>
@@ -183,9 +178,9 @@ FOE_NOT_AVAILABLE|<size=26>Spiacente, l'avversario non ha accettato la sfida</si
 PLAY_WITH_YOU|<size=26><color=#e57900ff>[%user]</color> vuole giocare con te, accetti la sfida?</size>
 FOE_DENY|<size=26>Spiacente, <color=#e57900ff>[%user]</color> non ha accettato la sfida</size>
 LEAVE_GAME_SINGLE|<size=26>Sicuro di voler abbandonare la partita?</size>
-LEAVE_GAME_MULTI|<size=26><color=#e57900ff>Termina la partita</color> e anche in caso di sconfitta <color=#e57900ff>guadagni [%coins] monete.</color>\n\nSicuro di voler abbandonare?</size>
+LEAVE_GAME_MULTI|<size=26><color=#e57900ff>Termina la partita</color> e anche in caso di sconfitta <color=#e57900ff>guadagni [%coins] moneta.</color>\n\nSicuro di voler abbandonare?</size>
 TITLE_LEAVE_GAME_MULTI|<size=25>Se abbandoni\nperdi il tuo premio</size>
-NAME_GAME|SCOPA
+NAME_GAME|BRISCOLA
 WAIT_FULL_ROOM|In attesa dell'altro giocatore...
 FOE_DISCONNECT|<size=26>Mi dispiace, l'avversario ha perso la connessione internet.</size>
 IDLE_DISCONNECT|<size=26>Mi dispiace, sei stato disconnesso dalla partita per motivi di inattività</size>
@@ -258,15 +253,16 @@ WIN_POPUP_ENDGAME_BOTTOM_TEXT|<size=26>GUADAGNI</size>\n<color=#f1d245>[%coins] 
 LOST_MULTI|HAI PERSO\n[%pointsPlayer] A [%pointsFoe] CONTRO\n<color=#ffee61>[%foe]</color>\n\nGUADAGNI COMUNQUE\n[%coins] MONETE\nPER AVER TERMINATO LA PARTITA
 LOST_SINGLE|HAI PERSO\n[%pointsPlayer] A [%pointsFoe]
 LOST_SINGLE_PREMIUM|HAI PERSO\n[%pointsPlayer] A [%pointsFoe] CONTRO\n<color=#ffee61>[%tableName]</color>
-DRAW_MULTI|HAI PAREGGIATO [%pointsPlayer] A [%pointsFoe] CONTRO <color=#e57900ff>[%foe]</color>\n\nGUADAGNI COMUNQUE [%coins] MONETA PER AVER TERMINATO LA PARTITA.
-DRAW_SINGLE|HAI PAREGGIATO [%pointsPlayer] A [%pointsFoe] CONTRO IL LIVELLO <color=#e57900ff>[%foe]</color>.
+DRAW_MULTI|HAI PAREGGIATO\n[%pointsPlayer] A [%pointsFoe] CONTRO\n<color=#ffee61>[%foe]</color>\n\nGUADAGNI COMUNQUE\n[%coins] MONETE\nPER AVER TERMINATO LA PARTITA
+DRAW_SINGLE|HAI PAREGGIATO\n[%pointsPlayer] A [%pointsFoe]
+DRAW_SINGLE_PREMIUM|HAI PAREGGIATO CON\n<color=#ffee61>[%tableName]</color>\n\n[%tableName] TI RESTITUISCE LA PUNTATA DI INGRESSO
 LEVEL_UP|HAI RAGGIUNTO IL\n<size=26><color=#00c400>LIVELLO [%level]</color></size>\nCONTINUA A GIOCARE\nE SCOPRI TUTTI I PREMI\nCHE TI ASPETTANO
 PLAY_AGAIN_MULTI|VUOI FARE UNA NUOVA PARTITA CONTRO\n<color=#ffee61>[%foe]</color>?
 HEADER_WIN|COMPLIMENTI!
 HEADER_LOST|OOOPS...
 HEADER_DRAW|HAI PAREGGIATO
 WIN_SINGLE_NO_LOGGED|HAI VINTO [%pointsPlayer] A [%pointsFoe] CONTRO\nIL LIVELLO <color=#e57900ff>[%foe]</color>
-TITLE_SHARE|Il gioco della SCOPA originale DAL NEGRO
+TITLE_SHARE|Il gioco della BRISCOLA originale DAL NEGRO
 MSG_SHARE_MULTI|Ho vinto contro [%foe] per [%pointsPlayer] a [%pointsFoe]!
 MSG_SHARE_SINGLE|Ho vinto contro il livello [%foe] per [%pointsPlayer] a [%pointsFoe]!
 CAPTION_SHARE|Provalo GRATIS!
@@ -307,7 +303,7 @@ HELP_PLAYERS_TITLE|AVVERSARI
 HELP_PLAYERS_SUBTITLE|GIOCATORI PREFERITI E GIOCATORI BLOCCATI
 HELP_FAQ_TITLE|FAQ
 HELP_FAQ_SUBTITLE|DOMANDE FREQUENTI
-HELP_RULES_TITLE|REGOLE DELLA SCOPA
+HELP_RULES_TITLE|REGOLE DELLA BRISCOLA
 HELP_RULES_SUBTITLE|IMPARA LE REGOLE DEL GIOCO
 HELP_INFO_TITLE|INFO
 HELP_INFO_SUBTITLE|INFORMAZIONI SUL GIOCO
@@ -341,35 +337,15 @@ ERROR_NETWORK_LEADERBOARDS|<size=26>Spiacente assenza di rete. Impossibile visua
 USER_BANNED|<size=26>Questo account è stato disabilitato</size>
 MSG_RESTORE_PURCHSE|<size=26>Acquisti ripristinati con successo</size>
 INVITE_FRIENDS|INVITA AMICI
-COMING_SOON_COINS|<size=19>PRESTO IN ARRIVO!\n\nIN ATTESA, PUOI ACQUISTARE LE MONETE\nNELLE VERSIONI MOBILE DELLA SCOPA</size>
-TITLE_INVITE_FRIENDS|Scopa originale Dal Negro
-MESSAGE_INVITE_FRIENDS|Prova anche tu la Scopa originale!
-CHOOSE_CARDS_TO_TAKE|Scegli le carte da prendere
-Rounds|MANI
-Scopa|Scopa
-Cards|Carte
-Coins|Denari
-Trump Card|Settebello
-Prime|Primiera
-Game Score|Punti Mano
-Previous Score|Punti Precedenti
-Total|Totale
-Continue|Continua
-You|Tu
-Him|Lui
-Napola|Napola
-Rebello|Rebello
-SCORE|PUNTEGGIO
-Classica|Classica
-21_POINTS|21 PUNTI
-11_POINTS|11 PUNTI
-SINGLE_ROUND|MANO SECCA
+COMING_SOON_COINS|<size=19>PRESTO IN ARRIVO!\n\nIN ATTESA PUOI ACQUISTARE LE MONETE\nNELLE VERSIONI MOBILE DELLA BRISCOLA</size>
+TITLE_INVITE_FRIENDS|Briscola Dal Negro
+MESSAGE_INVITE_FRIENDS|Prova anche tu la Briscola originale!
 THE_END|FINE
-CONTINUE|AVANTI
-MESAGE_POP_UP_INFO_TABLE_PREMIUM|<size=20>ELIMINA TUTTA LA PUBBLICITÀ CON\nSOLO [%price] MONETE PER OGNI PARTITA.\n\nPER ATTIVARE ACCENDI L’INTERRUTTORE.</size>
+CONTINUE|CONTINUA
+MESAGE_POP_UP_INFO_TABLE_PREMIUM|<size=20>ELIMINA TUTTA LA PUBBLICITA' CON\nSOLO [%price] MONETE PER OGNI PARTITA.\n\nPER ATTIVARE ACCENDI L’INTERRUTTORE.</size>
 TEXT_TABLE_PREMIUM|ELIMINA LA\n<size=16><color=#FFFFFF>PUBBLICITÀ</color></size>
-MSG_POP_UP_NO_COINS_TABLE_PREMIUM|<size=20>SPIACENTE NON HAI ABBASTANZA\nMONETE PER ELIMINARE LA PUBBLICITÀ.\n\nACQUISTA ALTRE MONETE O PROSEGUI A GIOCARE CON LA PUBBLICITA'.\n\nVUOI ACQUISTARE MONETE?</size>
-MSG_POP_UP_NO_VALIDATE_TABLE_PREMIUM|<size=20>SPIACENTE NON HAI ABBASTANZA\nMONETE PER ELIMINARE LA PUBBLICITÀ.\n\nPROSEGUI A GIOCARE CON LA PUBBLICITÀ.</size>
+MSG_POP_UP_NO_COINS_TABLE_PREMIUM|<size=20>SPIACENTE NON HAI ABBASTANZA\nMONETE PER ELIMINARE LA PUBBLICITA'.\n\nACQUISTA ALTRE MONETE O PROSEGUI A GIOCARE CON LA PUBBLICITA'.\n\nVUOI ACQUISTARE MONETE?</size>
+MSG_POP_UP_NO_VALIDATE_TABLE_PREMIUM|<size=20>SPIACENTE NON HAI ABBASTANZA\nMONETE PER ELIMINARE LA PUBBLICITA'.\n\nPROSEGUI A GIOCARE CON LA PUBBLICITA'.</size>
 ConnectionMultiplayer|Connessione al multiplayer...
 LOGIN_REWARD_COMPLETE|<size=26>Grazie per esserti registrato!\n\nHai ricevuto [%coins] monete in regalo.</size>
 LATER|NON ORA
@@ -381,15 +357,10 @@ RATE|VOTA
 MESSAGE_NO_CHAT|PER ABILITARE LA CHAT E' NECESSARIO COMPLETARE <color=#e57900ff>[%tot]</color> PARTITE.\n\nAL MOMENTO NE HAI COMPLETATE <color=#e57900ff>[%game]</color>
 MESSAGE_NO_CHAT_1|<size=20>PER ABILITARE LA CHAT E' NECESSARIO AVER COMPLETATO ALMENO IL <color=#e57900ff>[%tot]%</color> DELLE PARTITE AVVIATE IN MULTIPLAYER.\n\nAL MOMENTO LA TUA PERCENTUALE DI PARTITE COMPLETATE E'<color=#e57900ff>[%game]%</color></size>
 MESSAGE_BAN_DEVICE|<size=26>A seguito di precedenti violazioni alle norme del gioco, impossibile creare un account.</size>
-MESSAGE_POP_UP_INFO_CHAT|<size=25><color=#e57900ff>NOVITA'!</color>\n\n</size><size=22>La chat è ora impostata in modalità <color=#e57900ff>CHIUSA.</color> Se vuoi puoi attivarla nel menu <color=#e57900ff>OPZIONI</color> oppure direttamente dentro la <color=#e57900ff>CHAT.</color>\nNella lista dei tavoli aperti puoi vedere quali giocatori hanno la chat aperta o chiusa.</size>
-AUTOPROMO_BRISCOLA_TITLE|GIOCA CON\n<color=#ff0000>LA BRISCOLA</color>\nORIGINALE
-AUTOPROMO_BRISCOLA_SUBTITLE|SCARICA GRATIS\nLA BRISCOLA ORIGINALE\nDAL NEGRO
+AUTOPROMO_SCOPA_TITLE|GIOCA CON\n<color=#007a34>LA SCOPA</color>\nORIGINALE
+AUTOPROMO_SCOPA_SUBTITLE|SCARICA GRATIS\nLA SCOPA ORIGINALE\nDAL NEGRO
 AUTOPROMO_REMOVE_ADS_TITLE|GIOCA SENZA\nPUBBLICITÀ!
 AUTOPROMO_REMOVE_ADS_SUBTITLE|VUOI GIOCARE SENZA\nINTERRUZIONI? RIMUOVI\nLA PUBBLICITÀ!
-MESSAGE_BAN_MULTIPLAYER|<size=20>A CAUSA DI IRREGOLARITÀ NEL SUO ACCOUNT, NON E'POSSIBILE GIOCARE IN MULTIPLAYER CON QUESTO PROFILO.\n\nPER INFORMAZIONI CONTATTI IL SUPPORTO TRAMITE L'APPOSITA SEZIONE PRESENTE NEL GIOCO.</size>
-POP_UP_LOGIN_LEADERBOARD|<size=26>Se anche tu vuoi scalare le classifiche e competere per diventare il miglior giocatore di Scopa, registrati!!\n\nVuoi fare il login?</size>
-POP_UP_LOGIN_CHAMPION|<size=26>Solo i migliori giocatori di Scopa finiscono nella Bacheca dei Campioni, registrati!!\n\nVuoi fare il login?</size>
-POP_UP_LOGIN_PROFILE|<size=26>Per creare e personalizzare il tuo profilo registrati. Cosa stai aspettando!!\n\nVuoi fare il login?</size>
 RECOVERY_ACCOUNT|RECUPERA PROGRESSI
 CONFIRM_ADD_FACEBOOK|Se associ il tuo account di gioco a Facebook potrai recuperare i progressi di gioco su tutti i tuoi dispositivi collegati.\n\nVuoi procedere?
 CONFIRM_REMOVE_FACEBOOK|Se elimini il collegamento a Facebook dal tuo account di gioco non potrai recuperare i progressi su tutti i tuoi dispositivi collegati.\n\n Vuoi procedere?
@@ -459,9 +430,6 @@ PRODUCT_TAB_LUCKY_WHEEL_TITLE|PREMI E\nVINCI!
 PRODUCT_TAB_LUCKY_WHEEL_DESCRIPTION|OTTIENI MONETE\nGIOCANDO GRATIS!\nSARAI ABBASTANZA VELOCE?
 PRODUCT_TAB_COINS_TITLE|ACQUISTA\nMONETE
 PRODUCT_TAB_COINS_DESCRIPTION|FAI IL PIENO DI MONETE\nE GIOCA A TUTTI I\nTAVOLI SENZA\nPENSIERI!
-SAVE_CHANGES|SALVA MODIFICHE
-TITLE_GAME_MOD|SCEGLI MODALITÀ DI GIOCO
-TITLE_POINTS_MOD|SCEGLI PUNTI PER PARTITA
 TEXT_SPIN|GIRA
 TEXT_BONUS_LEVEL|BONUS LIVELLO [%lev]
 TEXT_DAILY_PRIZE|PREMIO DEL GIORNO
