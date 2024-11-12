@@ -1,8 +1,3 @@
-#![deny(clippy::all)]
-#![warn(clippy::pedantic)]
-#![warn(clippy::nursery)]
-#![feature(map_try_insert)]
-
 use csv::Reader;
 use itertools::Itertools;
 use rust_tools::get_type_efficacy;

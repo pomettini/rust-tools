@@ -1,4 +1,4 @@
-LOADING_INTRO|CARICAMENTO IN CORSO...
+ LOADING_INTRO|CARICAMENTO IN CORSO...
 HAS_NICKNAME_PASSWORD|Hai già un account con nickname e password ?
 LOGIN_WITH_NICKNAME|ACCEDI CON NICKNAME
 Disclosure_Facebook|NON PUBBLICHEREMO NULLA SENZA IL TUO CONSENSO
@@ -10,7 +10,7 @@ INSERT_YOUR_DATA|INSERISCI I TUOI DATI
 Forgot_your_password|PASSWORD O NICKNAME DIMENTICATI ?
 All_fields_are_required|<size=26>Tutti i campi sono richiesti.</size>
 OK|OK
-SIGN_IN|REGISTRA
+SIGN_IN|R  GISTRA
 Email_Validate|<size=26>Indirizzo email non valido</size>
 Connection|Connessione al gioco...
 Network_Error_Create_Player|<size=26>Spiacente assenza di rete.\nImpossibile creare l'utente.</size>
